@@ -25,6 +25,10 @@
     width: 50%;
   }
 
+  .url_link_name {
+    color: #DF5C38;
+  }
+
   h1, h2, h3, h4 {
     color: black;
     font-family: 'Nunito', sans-serif;
