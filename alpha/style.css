@@ -1,0 +1,17 @@
+/* normalising */
+* {
+    box-sizing: border-box;
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* fonts */
+  @font-face {
+    font-family: 'Nunito';
+    src: url('Nunito/Nunito.woff2');
+  }
+
+  h1 {
+    color: aquamarine;
+  }
