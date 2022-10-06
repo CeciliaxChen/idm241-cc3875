@@ -8,8 +8,9 @@
 
 
   body {
-    background-image: url("images/alternativebg.jpg");
-    background-size: cover;
+    /* background-image: url("images/alternativebg.jpg");
+    background-size: cover; */
+    background-color: #FFF7EB;
   }
 
   /* fonts */
@@ -30,7 +31,6 @@
   }
 
   h1, h2, h3, h4 {
-    color: black;
     font-family: 'Nunito', sans-serif;
   }
 
@@ -40,10 +40,13 @@
 
   h2, h3 {
     font-size: 1.8rem;
+    color: #C54D29;
   }
+
 
   h4 {
     font-size: 1.4rem;
+    color: #ECB14D;
   }
 
   .alpha_description {
@@ -51,8 +54,8 @@
   }
 
   .alpha_description__triggers, .alpha_description__rules, .alpha_description__feedback, .alpha_description__loopsAndModes{
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-bottom: 2.5rem;
   }
 
@@ -107,6 +110,10 @@
         width: 60%;
     }
 
+    .url_link_name {
+      color: #DF5C38;
+    }
+
     .alpha_description {
         width: auto;
     }
@@ -121,17 +128,24 @@
         margin-left: 1rem;
     }
 
+    h1, h2, h3, h4 {
+      font-family: 'Nunito', sans-serif;
+    }
+
     h1 {
         font-size: 1rem;
+        color: black;
     }
 
     h2, h3 {
         font-size: .9rem;
         margin: .5rem;
+        color: #C54D29;
     }
 
     h4 {
         font-size: .8rem;
+        color: #ECB14D;
     }
 
     ul {
@@ -183,23 +197,30 @@
         width: 90%;
     }
 
+    .url_link_name {
+      color: #DF5C38;
+    }
+
     h1 {
         font-size: 1.8rem;
+        color: black;
     }
 
     h2, h3 {
         font-size: 1.4rem;
+        color: #C54D29;
     }
 
     h4 {
         font-size: 1rem;
+        color: #ECB14D;
     }
 
     .alpha_description {
         margin: 2rem;
-    }
-
-    .alpha_description__picture {
+      }
+      
+      .alpha_description__picture {
         margin-left: 3.5rem;
     }
 
@@ -235,8 +256,9 @@
 
 @media screen and (min-width: 1200px) {
     body {
-        background-image: url("images/alternativebg.jpg");
-        background-size: cover;
+        /* background-image: url("images/alternativebg.jpg");
+        background-size: cover; */
+        background-color: #FFF7EB;
       }
     
       /* fonts */
@@ -251,31 +273,38 @@
         text-align: center;
         width: 50%;
       }
+
+      .url_link_name {
+        color: #DF5C38;
+      }
     
       h1, h2, h3, h4 {
-        color: black;
         font-family: 'Nunito', sans-serif;
       }
     
       h1 {
         font-size: 2.5rem;
+        color: black;
       }
     
       h2, h3 {
         font-size: 1.8rem;
+        color: #C54D29;
       }
     
       h4 {
         font-size: 1.4rem;
+        color: #ECB14D;
       }
     
       .alpha_description {
-        margin: 4rem;
+        margin: 4rem 2.5rem 2.5rem 2.5rem;
+        display: flex;
       }
     
       .alpha_description__triggers, .alpha_description__rules, .alpha_description__feedback, .alpha_description__loopsAndModes{
-        margin-left: 4rem;
-        margin-right: 4rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
         margin-bottom: 2.5rem;
       }
     
