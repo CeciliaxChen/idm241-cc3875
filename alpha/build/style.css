@@ -1,0 +1,181 @@
+/* normalising */
+* {
+    box-sizing: border-box;
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    /* background-image: url("images/alternativebg.jpg");
+    background-size: cover; */
+    background-color: #FFF7EB;
+}
+
+main {
+    text-align: center;
+}
+
+.rect_border {
+    height: 4rem;
+    width: 15rem;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top: 7.3rem;
+    border: white;
+    z-index: -100;
+}
+
+.line_under_tab {
+    position: relative;
+    top: 6.7rem;
+    height: 3px;
+    width: 11rem;
+    margin: auto;
+    background-color: #DF5C38;
+}
+
+.features_micro {
+    font-size: 2rem;
+    z-index: 100;
+}
+
+/* fonts */
+  @font-face {
+    font-family: 'Nunito';
+    src: url('Nunito2.woff2');
+  }
+
+.header {
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+    width: 50%;
+}
+
+.url_link_name {
+    color: #DF5C38;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2, h3 {
+    font-size: 1.8rem;
+    color: #C54D29;
+}
+
+h4 {
+    font-size: 1.4rem;
+    color: #ECB14D;
+}
+
+.micro_descript {
+    margin: 4rem;
+}
+
+.build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.rules_title__onHover, .rules_title__offHover, .feedback_title__onHover, .feedback_title__offHover {
+    margin-left: .8rem;
+}
+
+ul {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    list-style: circle;
+    margin-left: 2.8rem;
+    line-height: 1.5rem;
+    margin-top: .2rem;
+    margin-bottom: .3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  body {
+      /* background-image: url("images/alternativebg.jpg");
+      background-size: cover; */
+      background-color: #FFF7EB;
+    }
+    
+  /* fonts */
+    @font-face {
+      font-family: 'Nunito';
+      src: url('Nunito2.woff2');
+    }
+
+    .header {
+      margin: auto;
+      margin-top: 5rem;
+      text-align: center;
+      width: 50%;
+    }
+
+    .url_link_name {
+      color: #DF5C38;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2, h3 {
+      font-size: 1.8rem;
+      color: #C54D29;
+    }
+
+
+    h4 {
+      font-size: 1.4rem;
+      color: #ECB14D;
+    }
+
+    .micro_descript {
+      margin: 4rem;
+    }
+
+    .build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .rules_title__onHover, .rules_title__offHover, .feedback_title__onHover, .feedback_title__offHover {
+      margin-left: .8rem;
+    }
+
+    ul {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      list-style: circle;
+      margin-left: 2.8rem;
+      line-height: 1.5rem;
+      margin-top: .2rem;
+      margin-bottom: .3rem;
+    }
+}
