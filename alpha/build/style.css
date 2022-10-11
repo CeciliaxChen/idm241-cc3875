@@ -21,6 +21,14 @@
 
 .url_link_name {
     margin: 1.5rem 0;
+    color: #DF5C38;
+}
+
+.header {
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+  width: 50%;
 }
 
 body {
@@ -40,76 +48,69 @@ main {
     margin: auto;
 }
 
-.line_under_tab {
-    background-color: #DF5C38;
-    background-image: linear-gradient(#DF5C38 0 0);
-    background-size: 200% .08em;
-    height: 3px;
-    margin: auto;
-    position: relative;
-    top: 2.9rem; 
-    width: 8rem;
-}
-
-/* HOW DO YOU HOVER OVER AND LINE UGHHHHHH */
-
-/* .line_under_tab {
-    background-image: linear-gradient(#1095c1 0 0);
-    background-size: 200% .08em;
-    background-position: 200% 100%;
-    background-repeat: no-repeat;
-    transition: background-size .3s, background-position .3s .3s;
-  } */
 
 
-
-/* .line_under_tab:hover {
-    background: linear-gradient(to left, #DF5C38 100%);
-    background-color: #DF5C38;
-    height: 3px;
-    margin: auto;
-    position: relative;
-    top: 2.9rem;
-    transition: 1s ease-in-out;
-    width: 8rem;
-} */
-
-
-/* .line_under_tab {
-    background-image: linear-gradient(#1095c1 0 0);
-    background-size: 200% .08em;
-    background-position: 200% 100%;
-    background-repeat: no-repeat;
-    transition: background-size .5s, background-position .5s .5s;
-  }
-.line_under_tab:hover {
-    transition: background-size .5s .5s, background-position .5s;
-    background-size: 200% 100%;
-    background-position: 100% 100%;
-  } */
-
-
-
-
-
+/* line micro FINALLY WORKS______________________________________________________________________________ */
 .features_micro {
-    font-family: 'NotoSans', sans-serif;
-    font-size: 1.5rem;
-    margin-top: .6rem;
-    z-index: 100;
+  font-family: 'NotoSans', sans-serif;
+  font-size: 1.5rem;
+  margin-top: .6rem;
+  z-index: 100;
+
+  display: inline-block;
+  position: relative;
+  color: #000000;
 }
 
-
-.header {
-    margin: auto;
-    margin-top: 5rem;
-    text-align: center;
-    width: 50%;
+.features_micro:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #DF5C38;
+  transform-origin: bottom left;
+  transition: transform 0.35s ease-out;
 }
 
-.url_link_name {
-    color: #DF5C38;
+.features_micro:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
+/* line micro ends / PS thank you Nikki <333______________________________________________________________________________ */
+
+
+
+
+
+/* mode micro starts______________________________________________________________________________ */
+.dropdown_mode {
+  position: relative;
+}
+
+.dropdown_mode__content {
+  display: none;
+  position: absolute;
+  animation: fade-in .3s ease-in forwards;
+}
+  .mode1 { animation-delay: .3s ;}
+  .mode2 { animation-delay: .6s ;}
+  .mode3 { animation-delay: .9s ;}
+
+
+.dropdown_mode:hover .dropdown_mode__content {
+  display: block;
+}
+/* mode micro ends______________________________________________________________________________ */
+
+
+
+
+
+
+
 
 h1, h2, h3, h4 {
     font-family: 'Nunito', sans-serif;
@@ -130,29 +131,31 @@ h4 {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'NotoSans', sans-serif;
 }
 
-/* .mode {
-    margin-top: 1.8rem;
-} */
-
 .mode1, .mode2, .mode3 {
     height: 3.5rem;
-    width: 12rem;
+    width: 9rem;
     background-color: white;
 }
 
 .mode1 {
     margin-top: .6rem;
     padding-top: .5rem;
+    transition-delay: .03s
+
 }
 
-.mode2, .mode3 {
+.mode2 {
     padding-top: .5rem;
+
 }
 
+.mode3 {
+  padding-top: .5rem;
+}
 
 
 
@@ -198,17 +201,17 @@ ul {
 
 
 @media screen and (min-width: 1200px) {
-  body {
-      /* background-image: url("images/alternativebg.jpg");
-      background-size: cover; */
-      background-color: #FFF7EB;
-    }
     
   /* fonts */
-    @font-face {
-      font-family: 'Nunito';
-      src: url('Nunito2.woff2');
-    }
+  @font-face {
+    font-family: 'Nunito';
+    src: url('Nunito2.woff2');
+  }
+  
+  @font-face {
+    font-family: 'NotoSans';
+    src: url('notosans.woff2');
+  }
 
     .header {
       margin: auto;
@@ -219,7 +222,79 @@ ul {
 
     .url_link_name {
       color: #DF5C38;
+      margin: 1.5rem 0;
     }
+
+    body {
+      background-color: #FFF7EB;
+  }
+
+    main {
+      text-align: center;
+  }
+  
+  .rect_border {
+      height: 3.5rem;
+      width: 12rem;
+      background-color: white;
+      margin: auto;
+  }
+
+
+  /* line micro FINALLY WORKS______________________________________________________________________________ */
+.features_micro {
+  font-family: 'NotoSans', sans-serif;
+  font-size: 1.5rem;
+  margin-top: .6rem;
+  z-index: 100;
+
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.features_micro:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #DF5C38;
+  transform-origin: bottom left;
+  transition: transform 0.35s ease-out;
+}
+
+.features_micro:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* line micro ends / PS thank you Nikki <333______________________________________________________________________________ */
+
+
+
+
+
+/* mode micro starts______________________________________________________________________________ */
+.dropdown_mode {
+  position: relative;
+}
+
+.dropdown_mode__content {
+  display: none;
+  position: absolute;
+  animation: fade-in .3s ease-in forwards;
+}
+  .mode1 { animation-delay: .3s ;}
+  .mode2 { animation-delay: .6s ;}
+  .mode3 { animation-delay: .9s ;}
+
+
+.dropdown_mode:hover .dropdown_mode__content {
+  display: block;
+}
+/* mode micro ends______________________________________________________________________________ */
 
     h1, h2, h3, h4 {
       font-family: 'Nunito', sans-serif;
@@ -240,8 +315,175 @@ ul {
       color: #ECB14D;
     }
 
+    p {
+      font-size: 1.3rem;
+      font-family: 'NotoSans', sans-serif;
+  }
+
     .micro_descript {
       margin: 4rem;
+      padding-top: 13rem;
+    }
+
+    .build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .rules_title__onHover, .rules_title__offHover, .feedback_title__onHover, .feedback_title__offHover {
+      margin-left: .8rem;
+    }
+
+    ul {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      list-style: circle;
+      margin-left: 2.8rem;
+      line-height: 1.5rem;
+      margin-top: .2rem;
+      margin-bottom: .3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) {
+    
+  /* fonts */
+  @font-face {
+    font-family: 'Nunito';
+    src: url('Nunito2.woff2');
+  }
+  
+  @font-face {
+    font-family: 'NotoSans';
+    src: url('notosans.woff2');
+  }
+
+    .header {
+      margin: auto;
+      margin-top: 2rem;
+      text-align: center;
+      width: 90%;
+    }
+
+    .url_link_name {
+      color: #DF5C38;
+      margin: 1rem 0;
+    }
+
+    body {
+      background-color: #FFF7EB;
+  }
+
+    main {
+      text-align: center;
+  }
+  
+  .rect_border {
+      height: 3rem;
+      width: 9rem;
+      background-color: white;
+      margin: auto;
+  }
+
+
+  /* line micro FINALLY WORKS______________________________________________________________________________ */
+.features_micro {
+  font-family: 'NotoSans', sans-serif;
+  font-size: 1.2rem;
+  margin-top: .6rem;
+  z-index: 100;
+
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.features_micro:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #DF5C38;
+  transform-origin: bottom left;
+  transition: transform 0.35s ease-out;
+}
+
+.features_micro:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* line micro ends / PS thank you Nikki <333______________________________________________________________________________ */
+
+
+
+
+
+/* mode micro starts______________________________________________________________________________ */
+.dropdown_mode {
+  position: relative;
+}
+
+.dropdown_mode__content {
+  display: none;
+  position: absolute;
+  animation: fade-in .3s ease-in forwards;
+  margin: auto;
+  height: 3rem;
+  width: 9rem;
+}
+  .mode1 { animation-delay: .3s ;}
+  .mode2 { animation-delay: .6s ;}
+  .mode3 { animation-delay: .9s ;}
+
+
+.dropdown_mode:hover .dropdown_mode__content {
+  display: block;
+  margin: auto;
+  height: 3rem;
+  width: 9rem;
+}
+/* mode micro ends______________________________________________________________________________ */
+
+    h1, h2, h3, h4 {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2, h3 {
+      font-size: 1.3rem;
+      color: #C54D29;
+    }
+
+
+    h4 {
+      font-size: 1.1rem;
+      color: #ECB14D;
+    }
+
+    p {
+      font-size: 1rem;
+      font-family: 'NotoSans', sans-serif;
+  }
+
+    .micro_descript {
+      margin: 4rem;
+      padding-top: 13rem;
     }
 
     .build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
