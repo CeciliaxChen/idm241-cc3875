@@ -32,8 +32,6 @@
 }
 
 body {
-    /* background-image: url("images/alternativebg.jpg");
-    background-size: cover; */
     background-color: #FFF7EB;
 }
 
@@ -42,11 +40,12 @@ main {
 }
 
 .rect_border {
-  height: 3.5rem;
   width: 12rem;
   background-color: white;
   margin: auto;
+  height: 3rem;
 }
+
 
 
 
@@ -54,7 +53,6 @@ main {
 .features_micro {
   font-family: 'NotoSans', sans-serif;
   font-size: 1.5rem;
-  margin-top: .6rem;
   z-index: 100;
 
   display: inline-block;
@@ -80,7 +78,6 @@ main {
   transform-origin: bottom left;
 }
 /* line micro ends / PS thank you Nikki <333______________________________________________________________________________ */
-
 
 
 
@@ -89,74 +86,73 @@ main {
 .dropdown_mode {
   position: relative;
   cursor: pointer;
+  padding: .6rem 0;
 }
 
+.dropdown_mode {
+  position: relative;
+}
 
 .dropdown_mode__content {
-  display: none;
-  position: absolute; 
-  opacity: 0;
-  animation: fade-in .42s ease-in forwards;
+  margin: 0;
 }
-  /* .mode1:nth-child(1) { animation-delay: .3s; }
-  .mode2:nth-child(2) { animation-delay: .6s; }
-  .mode3:nth-child(3) { animation-delay: .9s; } */
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
 
-    to {
-      opacity: 1;
-    }
+.dropdown_mode__content li {
+  list-style: none;
+}
+
+
+
+
+/* Hover ON */
+
+.fade-in ul li:nth-child(1) {
+  animation: 1s forwards fade-in;
+}
+.fade-in ul li:nth-child(2) {
+  animation: 2s forwards fade-in;
+}
+
+.fade-in ul li:nth-child(3) {
+  animation: 2.5s forwards fade-in;
+}
+
+/* Hover OFF */
+
+.fade-out ul li:nth-child(1) {
+  animation: .8s forwards fade-out;
+}
+.fade-out ul li:nth-child(2) {
+  animation: 1.4s forwards fade-out;
+}
+
+.fade-out ul li:nth-child(3) {
+  animation: 1.8s forwards fade-out;
+}
+
+/* Animation */
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
   }
 
-.features_micro:after .mode1 {
-  display: none;
-  position: absolute; 
-  opacity: 0;
-  animation: fade-in .42s ease-in forwards;
+  100% {
+    opacity: 1;
+  }
 }
-.features_micro:after .mode2 {
-  display: none;
-  position: absolute; 
-  opacity: 0;
-  animation: fade-in .84s ease-in forwards;
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.features_micro:after .mode3 {
-  display: none;
-  position: absolute; 
-  opacity: 0;
-  animation: fade-in 1.26s ease-in forwards;
-}
-/* .mode1 {
-  display: none;
-  position: absolute; 
-  opacity: 0;
-  animation: fade-in .42s ease-in forwards;
-}
-.mode2 {
-  display: none;
-  position: absolute; 
-  opacity: 0;
-  animation: fade-in .84s ease-in forwards;
-}
-.mode3 {
-  display: none;
-  position: absolute; 
-  opacity: 0;
-  animation: fade-in 1.26s ease-in forwards;
-} */
 
 /* mode micro ends______________________________________________________________________________ */
-
-
-
-
-
-
-
-
 
 
 
@@ -165,611 +161,27 @@ main {
 
 
 h1, h2, h3, h4 {
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h2, h3 {
-    font-size: 1.8rem;
-    color: #C54D29;
+  font-size: 1.8rem;
+  color: #C54D29;
 }
 
 h4 {
-    font-size: 1.4rem;
-    color: #ECB14D;
+  font-size: 1.4rem;
+  color: #ECB14D;
 }
 
 p {
-    font-size: 1.3rem;
-    font-family: 'NotoSans', sans-serif;
-}
-
-.mode1, .mode2, .mode3 {
-    height: 3.5rem;
-    width: 12rem;
-    background-color: white;
-}
-
-.mode1 {
-    margin-top: .6rem;
-    padding-top: .5rem;
-}
-
-.mode2 {
-    padding-top: .5rem;
-
-}
-
-.mode3 {
-  padding-top: .5rem;
-}
-
-
-
-
-
-
-
-.micro_descript {
-    margin: 3rem;
-    padding-top: 12rem;
-}
-
-.build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 2.5rem;
-}
-
-.rules_title__onHover, .rules_title__offHover, .feedback_title__onHover, .feedback_title__offHover {
-    margin-left: .8rem;
-}
-
-ul {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    list-style: circle;
-    margin-left: 2.8rem;
-    line-height: 1.5rem;
-    margin-top: .2rem;
-    margin-bottom: .3rem;
-}
-
-li {
+  font-size: 1.3rem;
   font-family: 'NotoSans', sans-serif;
-  list-style-type: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 320px) {
-    
-  /* fonts */
-  @font-face {
-    font-family: 'Nunito';
-    src: url('Nunito2.woff2');
-  }
-  
-  @font-face {
-    font-family: 'NotoSans';
-    src: url('notosans.woff2');
-  }
-
-    .header {
-      margin: auto;
-      margin-top: 2rem;
-      text-align: center;
-      width: 90%;
-    }
-
-    .url_link_name {
-      color: #DF5C38;
-      margin: 1rem 0;
-    }
-
-    body {
-      background-color: #FFF7EB;
-  }
-
-    main {
-      text-align: center;
-  }
-  
-  .rect_border {
-      height: 3rem;
-      width: 9rem;
-      background-color: white;
-      margin: auto;
-  }
-
-
-  /* line micro FINALLY WORKS______________________________________________________________________________ */
-.features_micro {
-  font-family: 'NotoSans', sans-serif;
-  font-size: 1.2rem;
-  margin-top: .6rem;
-  z-index: 100;
-
-  display: inline-block;
-  position: relative;
-  color: #000000;
-}
-
-.features_micro:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #DF5C38;
-  transform-origin: bottom left;
-  transition: transform 0.35s ease-out;
-}
-
-.features_micro:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-/* line micro ends______________________________________________________________________________ */
-
-
-
-/* mode micro starts______________________________________________________________________________ */
-.dropdown_mode {
-  position: relative;
-}
-
-.dropdown_mode__content {
-  display: none;
-  position: absolute;
-  margin: auto;
-  height: 3rem;
-  width: 9rem;
-}
-
-
-.dropdown_mode:hover .dropdown_mode__content:hover {
-  display: block;
-  margin: auto;
-  height: 3rem;
-  width: 9rem;
-}
-/* mode micro ends______________________________________________________________________________ */
-
-    h1, h2, h3, h4 {
-      font-family: 'Nunito', sans-serif;
-    }
-
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    h2, h3 {
-      font-size: 1.3rem;
-      color: #C54D29;
-    }
-
-    h4 {
-      font-size: 1.1rem;
-      color: #ECB14D;
-    }
-
-    p {
-      font-size: 1rem;
-      font-family: 'NotoSans', sans-serif;
-  }
-
-  .mode1, .mode2, .mode3 {
-    height: 3rem;
-    width: 9rem;
-    background-color: white;
-}
-
-.mode1 {
-    margin-top: .6rem;
-    padding-top: .5rem;
-}
-
-.mode2 {
-    padding-top: .3rem;
-
-}
-
-.mode3 {
-  padding-top: .3rem;
-}
-
-    .micro_descript {
-      margin: 1rem;
-      padding-top: 10rem;
-    }
-
-    .build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .rules_title__onHover, .rules_title__offHover, .feedback_title__onHover, .feedback_title__offHover {
-      margin-left: .8rem;
-    }
-
-    ul {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem;
-      list-style: circle;
-      margin-left: 2.8rem;
-      line-height: 1.5rem;
-      margin-top: .2rem;
-      margin-bottom: .3rem;
-    }
-
-    li {
-      font-family: 'NotoSans', sans-serif;
-      list-style-type: none;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 700px) {
-    
-  /* fonts */
-  @font-face {
-    font-family: 'Nunito';
-    src: url('Nunito2.woff2');
-  }
-  
-  @font-face {
-    font-family: 'NotoSans';
-    src: url('notosans.woff2');
-  }
-
-    .header {
-      margin: auto;
-      margin-top: 2rem;
-      text-align: center;
-      width: 90%;
-    }
-
-    .url_link_name {
-      color: #DF5C38;
-      margin: 1rem 0;
-    }
-
-    body {
-      background-color: #FFF7EB;
-  }
-
-    main {
-      text-align: center;
-  }
-  
-  .rect_border {
-      height: 3rem;
-      width: 9rem;
-      background-color: white;
-      margin: auto;
-  }
-
-
-  /* line micro FINALLY WORKS______________________________________________________________________________ */
-.features_micro {
-  font-family: 'NotoSans', sans-serif;
-  font-size: 1.2rem;
-  margin-top: .6rem;
-  z-index: 100;
-
-  display: inline-block;
-  position: relative;
-  color: #000000;
-}
-
-.features_micro:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #DF5C38;
-  transform-origin: bottom left;
-  transition: transform 0.35s ease-out;
-}
-
-.features_micro:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-/* line micro ends______________________________________________________________________________ */
-
-
-
-/* mode micro starts______________________________________________________________________________ */
-.dropdown_mode {
-  position: relative;
-}
-
-.dropdown_mode__content {
-  display: none;
-  position: absolute;
-  margin: auto;
-  height: 3rem;
-  width: 9rem;
-}
-
-
-.dropdown_mode:hover .dropdown_mode__content {
-  display: block;
-  margin: auto;
-  height: 3rem;
-  width: 9rem;
-}
-/* mode micro ends______________________________________________________________________________ */
-
-    h1, h2, h3, h4 {
-      font-family: 'Nunito', sans-serif;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    h2, h3 {
-      font-size: 1.7rem;
-      color: #C54D29;
-    }
-
-    h4 {
-      font-size: 1.4rem;
-      color: #ECB14D;
-    }
-
-    p {
-      font-size: 1.1srem;
-      font-family: 'NotoSans', sans-serif;
-  }
-
-  .mode1, .mode2, .mode3 {
-    height: 3rem;
-    width: 9rem;
-    background-color: white;
-}
-
-.mode1 {
-    margin-top: .6rem;
-    padding-top: .5rem;
-}
-
-.mode2 {
-    padding-top: .3rem;
-
-}
-
-.mode3 {
-  padding-top: .3rem;
-}
-
-    .micro_descript {
-      margin: 1rem;
-      padding-top: 10rem;
-    }
-
-    .build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .rules_title__onHover, .rules_title__offHover, .feedback_title__onHover, .feedback_title__offHover {
-      margin-left: .8rem;
-    }
-
-    ul {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem;
-      list-style: circle;
-      margin-left: 2.8rem;
-      line-height: 1.5rem;
-      margin-top: .2rem;
-      margin-bottom: .3rem;
-    }
-
-    li {
-      font-family: 'NotoSans', sans-serif;
-      list-style-type: none;
-    }
-}
-
-
-
-
-
-
-@media screen and (min-width: 820px) {
-  .micro_descript {
-    margin: 3rem;
-    padding-top: 9rem;
-    display: block;
-  }
-
-  .rect_border {
-    height: 3.2rem;
-    width: 8rem;
-    background-color: white;
-    margin: auto;
-  }
-
-  .mode1, .mode2, .mode3 {
-    height: 3.2rem;
-    width: 8rem;
-    background-color: white;
-  }
-
-  .mode1 {
-    margin-top: .6rem;
-    padding-top: .5rem;
-}
-
-  .mode2 {
-      padding-top: .5rem;
-  
-  }
-  
-  .mode3 {
-    padding-top: .5rem;
-    }
-  
-}
-
-
-
-
-
-
-@media screen and (min-width: 1200px) {
-    
-  /* fonts */
-  @font-face {
-    font-family: 'Nunito';
-    src: url('Nunito2.woff2');
-  }
-  
-  @font-face {
-    font-family: 'NotoSans';
-    src: url('notosans.woff2');
-  }
-
-    .header {
-      margin: auto;
-      margin-top: 5rem;
-      text-align: center;
-      width: 50%;
-    }
-
-    .url_link_name {
-      color: #DF5C38;
-      margin: 1.5rem 0;
-    }
-
-    body {
-      background-color: #FFF7EB;
-  }
-
-    main {
-      text-align: center;
-  }
-  
-  .rect_border {
-      height: 3.5rem;
-      width: 12rem;
-      background-color: white;
-      margin: auto;
-  }
-
-
-  /* line micro FINALLY WORKS______________________________________________________________________________ */
-.features_micro {
-  font-family: 'NotoSans', sans-serif;
-  font-size: 1.5rem;
-  margin-top: .6rem;
-  z-index: 100;
-
-  display: inline-block;
-  position: relative;
-  color: #000000;
-}
-
-.features_micro:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #DF5C38;
-  transform-origin: bottom left;
-  transition: transform 0.35s ease-out;
-}
-
-.features_micro:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-/* line micro ends / PS thank you Nikki <333______________________________________________________________________________ */
-
-
-
-
-
-/* mode micro starts______________________________________________________________________________ */
-.dropdown_mode {
-  position: relative;
-}
-
-/* .dropdown_mode__content {
-  display: none;
-  position: absolute;
-}
-
-.dropdown_mode:hover .dropdown_mode__content {
-  display: block;
-} */
-/* mode micro ends______________________________________________________________________________ */
-
-
-
-  h1, h2, h3, h4 {
-    font-family: 'Nunito', sans-serif;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2, h3 {
-    font-size: 1.8rem;
-    color: #C54D29;
-  }
-
-  h4 {
-    font-size: 1.4rem;
-    color: #ECB14D;
-  }
-
-  p {
-    font-size: 1.3rem;
-    font-family: 'NotoSans', sans-serif;
-  }
 
 .mode1, .mode2, .mode3 {
   height: 3.5rem;
@@ -782,18 +194,15 @@ li {
   padding-top: .5rem;
 }
 
-.mode2 {
+.mode2, .mode3 {
   padding-top: .5rem;
 }
 
-.mode3 {
-  padding-top: .5rem;
-}
+
 
 .micro_descript {
   margin: 3rem;
   padding-top: 12rem;
-  display: flex;
 }
 
 .build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
@@ -818,7 +227,314 @@ ul {
 
 li {
   font-family: 'NotoSans', sans-serif;
-  list-style-type: none;
+  list-style-type: circle;
 }
 
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) {
+
+  .header {
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    width: 90%;
+  }
+
+  .url_link_name {
+    color: #DF5C38;
+    margin: 1rem 0;
+  }
+
+  main {
+    text-align: center;
+  }
+  
+  .rect_border {
+    width: 9rem;
+    background-color: white;
+    margin: auto;
+  }
+
+
+  /* line micro FINALLY WORKS______________________________________________________________________________ */
+.features_micro {
+  font-size: 1.2rem;
+}
+/* line micro ends______________________________________________________________________________ */
+
+
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2, h3 {
+  font-size: 1.2rem;
+  color: #C54D29;
+}
+
+h4 {
+  font-size: 1rem;
+  color: #ECB14D;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.mode1, .mode2, .mode3 {
+  height: 3rem;
+  width: 9rem;
+  background-color: white;
+}
+
+.mode1 {
+  margin-top: .6rem;
+  padding-top: .5rem;
+}
+
+.mode2, .mode3 {
+  padding-top: .3rem;
+
+}
+
+  .micro_descript {
+    margin: 1rem;
+    padding-top: 10rem;
+  }
+
+  .build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .rules_title__onHover, .rules_title__offHover, .feedback_title__onHover, .feedback_title__offHover {
+    margin-left: .8rem;
+  }
+
+  ul {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    list-style: circle;
+    margin-left: 2.8rem;
+    line-height: 1.5rem;
+    margin-top: .2rem;
+    margin-bottom: .3rem;
+  }
+
+  li {
+    font-family: 'NotoSans', sans-serif;
+    list-style-type: circle;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+
+  .header {
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    width: 90%;
+  }
+
+  .url_link_name {
+    color: #DF5C38;
+    margin: 1rem 0;
+  }
+
+  .rect_border {
+    width: 9rem;
+    background-color: white;
+    margin: auto;
+  }
+
+
+  /* line micro FINALLY WORKS______________________________________________________________________________ */
+  .features_micro {
+    font-family: 'NotoSans', sans-serif;
+    font-size: 1.2rem;
+    z-index: 100;
+  }
+  /* line micro ends______________________________________________________________________________ */
+
+
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2, h3 {
+    font-size: 1.7rem;
+    color: #C54D29;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    color: #ECB14D;
+  }
+
+  p {
+    font-size: 1.1srem;
+    font-family: 'NotoSans', sans-serif;
+  }
+
+  .mode1, .mode2, .mode3 {
+    height: 3rem;
+    width: 9rem;
+    background-color: white;
+  }
+
+  .mode1 {
+    margin-top: .6rem;
+    padding-top: .5rem;
+  }
+
+  .mode2, .mode3 {
+    padding-top: .3rem;
+  }
+
+  .micro_descript {
+    margin: 1rem;
+    padding-top: 10rem;
+  }
+
+  .build_description__triggers, .build_description__rules, .build_description__feedback, .build_description__loopsAndModes{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .rules_title__onHover, .rules_title__offHover, .feedback_title__onHover, .feedback_title__offHover {
+    margin-left: .8rem;
+  }
+
+  ul {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    list-style: circle;
+    margin-left: 2.8rem;
+    line-height: 1.5rem;
+    margin-top: .2rem;
+    margin-bottom: .3rem;
+  }
+
+  li {
+    font-family: 'NotoSans', sans-serif;
+    list-style-type: circle;
+  }
+}
+
+
+
+
+
+
+@media screen and (min-width: 820px) {
+  .micro_descript {
+    margin: 3rem;
+    padding-top: 9rem;
+    display: block;
+  }
+
+  .rect_border {
+    width: 8rem;
+    background-color: white;
+    margin: auto;
+  }
+
+  .mode1, .mode2, .mode3 {
+    height: 3.2rem;
+    width: 8rem;
+    background-color: white;
+  }
+
+  .mode1 {
+    margin-top: .6rem;
+    padding-top: .5rem;
+}
+
+  .mode2, .mode3 {
+    padding-top: .5rem;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+  .header {
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+    width: 50%;
+  }
+
+  .url_link_name {
+    color: #DF5C38;
+    margin: 1.5rem 0;
+  }
+  
+  .rect_border {
+    width: 12rem;
+    background-color: white;
+    margin: auto;
+  }
+
+  .mode1, .mode2, .mode3 {
+    height: 3.5rem;
+    width: 12rem;
+    background-color: white;
+  }
+
+  .mode1 {
+    margin-top: .6rem;
+    padding-top: .5rem;
+  }
+  
+  .mode2 {
+    padding-top: .5rem;
+  }
+  
+  .mode3 {
+    padding-top: .5rem;
+  }
+
+  .micro_descript {
+    margin: 3rem;
+    padding-top: 12rem;
+    display: flex;
+  }
+  
+  ul {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    list-style: circle;
+    margin-left: 2.8rem;
+    line-height: 1.5rem;
+    margin-top: .2rem;
+    margin-bottom: .3rem;
+  }
+  
+  li {
+    font-family: 'NotoSans', sans-serif;
+    list-style-type: circle;
+  }
 }
