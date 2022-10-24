@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header_description">IDM 241 - Microinteractions Beta Description</h1>
+        <a class="url_link" href="https://www.allrecipes.com" target="_blank"> 
+            <h2 class="url_link_name"> allrecipes </h2>
+        </a>
+    </div>
+    <main class="beta_description">
+        <h2 class="beta_description_mainTabTitle"> Dyslexia Main Tab </h2>
+        <section class="beta_description_mainTab">
+            <div class="beta_description_mainTab__triggers"> 
+                <h3 class="triggers_title"> Triggers </h3>
+                <ul class="triggers_title__list"> 
+                    <li class="triggers_title__list_item"> hover on and hover off the "Dyslexia" main tab on the menu</li>
+                </ul>
+            </div>
+            <div class="beta_description_mainTab__rules">
+                <h3 class="rules_title"> Rules </h3>
+                <h4 class="rules_title__onHover"> ON HOVER </h4>
+                <ul class="rules_title__list">
+                    <li class="rules_title__list_item"> the thin, turquoise underline on the tab would start from the left and travel horizontally to the end of the word to the right </li>
+                    <li class="rules_title__list_item"> the sub categories will consequentially ease in 1 second in, one sub category after another from top to bottom </li>
+                    <li class="rules_title__list_item"> the arrow curser turns into the pointer curser </li>
+                </ul>
+                <h4 class="rules_title__offHover"> OFF HOVER </h4>
+                <ul class="rules_title__list"> 
+                    <li class="rules_title__list_item"> the thin, turquoise underline on the tab would start to horizontally retract from the right end of the tab and travel to where it started from </li>
+                    <li class="rules_title__list_item"> the sub categories will consequentially ease out 1 second in, one sub category after another from top to bottom </li>
+                    <li class="rules_title__list_item"> the pointer curser turns into the arrow curser </li>
+                </ul>
+            </div>
+            <div class="beta_description_mainTab__feedback">
+                <h3 class="feedback_title"> Feedback </h3>
+                <h4 class="feedback_title__onHover"> ON HOVER </h4>
+                <ul class="feedback_title__list">
+                    <li class="feedback_title__list_item"> the thin, turquoise underline on the tab would start from the left and travel horizontally to the end of the word to the right </li>
+                    <li class="feedback_title__list_item"> the sub categories will consequentially ease in 1 second in, one sub category after another from top to bottom </li>
+                    <li class="feedback_title__list_item"> the arrow curser turns into the pointer curser </li>
+                </ul>
+                <h4 class="feedback_title__offHover"> OFF HOVER </h4>
+                <ul class="feedback_title__list"> 
+                    <li class="feedback_title__list_item"> the thin, turquoise underline on the tab would start to horizontally retract from the right end of the tab and travel to where it started from </li>
+                    <li class="feedback_title__list_item"> the sub categories will consequentially ease out 1 second in, one sub category after another from top to bottom </li>
+                    <li class="feedback_title__list_item"> the pointer curser turns into the arrow curser </li>
+                </ul>
+            </div>
+            <div class="beta_description_mainTab__loopsAndModes"> 
+                <h3 class="loopsAndModes_title"> Loops and Modes </h3>
+                <ul class="loopsAndModes_title__list">
+                    <li class="loopsAndModes_title__list_item"> sub categories of menu appear on hover and sub categories of menu disappear off hover </li>
+                </ul>
+            </div>
+        </section>
+        <h2 class="beta_description_subCatTitle"> Sub Category Fonts </h2>
+        <section class="beta_description_subCat">
+            <div class="beta_description_subCat__triggers">
+                <h3 class="triggers_title"> Triggers </h3>
+                <ul class="triggers_title__list">
+                    <li class="triggers_title__list_item"> click on and click off the sub categories of fonts after hovering on the Dyslexia tab </li>
+                </ul>
+            </div>
+            <div class="beta_description_subCat__rules">
+                <h3 class="rules_title"> Rules </h3>
+                <h4 class="rules_title__onClick"> ON CLICK </h4>
+                <ul class="rules_title__list"> 
+                    <li class="rules_title__list_item"> the box around the chosen and clicked-on font will fill in with a mint green colour </li>
+                    <li class="rules_title__list_item"> the font is bolded to emphasise and indicate that it has been selected </li>
+                </ul>
+                <h4 class="rules_title__offClick"> OFF CLICK </h4>
+                <ul class="rules_title__list"> 
+                    <li class="rules_title__list_item"> the box around the chosen and clicked-on font will unfill and return to its default state of a white background behind the font name </li>
+                    <li class="rules_title__list_item"> the font is unbolded to emphasise and indicate that it has been deselected </li>
+                </ul>
+            </div>
+            <div class="beta_description_subCat__feedback">
+                <h3 class="feedback_title"> Feedback </h3>
+                <h4 class="feedback_title__onClick"> ON CLICK </h4>
+                <ul class="feedback_title__list">
+                    <li class="feedback_title__list_item"> the box around the chosen and clicked-on font will fill in with a mint green colour </li>
+                    <li class="feedback_title__list_item"> the font is bolded to emphasise and indicate that it has been selected </li>
+                </ul>
+                <h4 class="feedback_title__offClick"> OFF CLICK </h4>
+                <ul class="feedback_title__list">
+                    <li class="feedback_title__list_item"> the box around the chosen and clicked-on font will unfill and return to its default state of a white background behind the font name </li>
+                    <li class="feedback_title__list_item"> the font is unbolded to emphasise and indicate that it has been deselected </li>
+                </ul>
+            </div>
+            <div class="beta_description_subCat__loopsAndModes">
+                <h3 class="loopsAndModes_title"> Loops and Modes </h3>
+                <ul class="loopsAndModes_title__list"> 
+                    <li class="loopsAndModes_title__list_item"> the default text below the menu will change fonts depending on the respective font sub catergory chosen </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <div class="beta_description__picture">
+        <img src="images/beta1.png" alt="first_step" class="pics">
+        <img src="images/beta2.png" alt="second_step" class="pics">
+        <img src="images/beta3.png" alt="third_step" class="pics">
+        <img src="images/beta4.png" alt="fourth_step" class="pics">
+        <img src="images/beta5.png" alt="fifth_step" class="pics">
+        <img src="images/beta6.png" alt="sixth_step" class="pics">
+        <img src="images/beta7.png" alt="seventh_step" class="pics">
+        <img src="images/beta8.png" alt="eighth_step" class="pics">
+        <img src="images/beta9.png" alt="ninth_step" class="pics">
+    </div>
+</body>
+</html>
