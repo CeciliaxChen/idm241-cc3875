@@ -32,12 +32,12 @@
 }
 
 body {
-    background-color: #f5f5f5;
-    line-height: 2rem;
+  background-color: #f5f5f5;
+  line-height: 2rem;
 }
 
 main {
-    text-align: center;
+  text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -60,7 +60,7 @@ h3 {
 
 h4 {
   font-size: 1.4rem;
-  color: #A0C0D6;
+  color: #668396;
 }
 
 p {
@@ -85,8 +85,9 @@ li {
 }
 
 .pics {
-    margin: auto;
-    width: 30%;
+  margin: auto;
+  width: 30%;
+  display: block;
 }
 
 
@@ -138,15 +139,15 @@ li {
       font-size: .8rem;
     }
 
-    .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
-        margin: 1.5rem 0;
+    .beta_description_mainTab__triggers, .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__triggers, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
+      margin: 1.5rem .3rem 1.5rem 0;
     }
 
     .pics {
-        display: block;
-        margin: auto;
-        margin: 1.5rem 0;
-        width: 100%;
+      width: 70%;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
 }
 
@@ -188,7 +189,7 @@ li {
       font-size: .9rem;
     }
 
-    .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
+    .beta_description_mainTab__triggers, .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__triggers, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
         margin: 1.5rem 0;
     }
 
@@ -197,7 +198,7 @@ li {
         margin: auto;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        width: 90%;
+        width: 50%;
     }
 }
 
@@ -222,7 +223,7 @@ li {
     }
 
     .beta_description_mainTab, .beta_description_subCat {
-        margin: 0 2.5rem;
+        margin: 0 2rem;
         display: flex;
     }
 
@@ -256,10 +257,11 @@ li {
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        margin: 0 1rem;
+        margin: 2rem 1rem;
     }
     
     .pics {
-        width: 45%;
+      width: 20%;
+      margin: 2rem;
     }
 }
