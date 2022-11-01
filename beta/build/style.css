@@ -326,6 +326,10 @@ li {
     .beta_description_mainTab__triggers, .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__triggers, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
       margin: 1.5rem .3rem 1.5rem 0;
     }
+
+    .beta_description {
+      margin: 11rem 1rem 2rem;
+    }
 }
 
 
@@ -368,6 +372,10 @@ li {
 
     .beta_description_mainTab__triggers, .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__triggers, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
         margin: 1.5rem 0;
+    }
+
+    .beta_description {
+      margin: 12rem 1rem;
     }
 }
 
