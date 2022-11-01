@@ -18,10 +18,26 @@
     src: url('notosans2.woff2');
   }
 
+  @font-face {
+    font-family: 'OpenDyslexic';
+    src: url('OpenDyslexic-Reg.woff2');
+  }
+
+  @font-face {
+    font-family: 'OpenSans';
+    src: url('OpenSans-Reg.woff2');
+  }
+
+  @font-face {
+    font-family: 'Verdana';
+    src: url('verdana.woff2');
+  }
+
+
 
 .url_link_name {
-    margin: 1.5rem 0;
-    color: #DE7456;
+  margin: 1.5rem 0;
+  color: #DE7456;
 }
 
 .header {
@@ -54,9 +70,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6rem;
-    color: #43597D;
-  }
+  font-size: 1.6rem;
+  color: #43597D;
+}
 
 h4 {
   font-size: 1.4rem;
@@ -84,31 +100,78 @@ li {
   list-style-type: circle;
 }
 
-.rect_border {
-    width: 12rem;
-    background-color: white;
-    margin: auto;
-    height: 3rem;
+.menu {
+  width: 12rem;
+  background-color: white;
+  margin: auto;
+  height: 4rem;
 }
   
   
-.mode1, .mode2, .mode3 {
-    height: 3.5rem;
-    width: 12rem;
-    background-color: white;
+.font1, .font2, .font3 {
+  height: 3.5rem;
+  width: 12rem;
+  background-color: white;
+  text-align: center;
 }
   
-.mode1 {
-  margin-top: .6rem;
+.font1 {
   padding-top: .5rem;
+  font-family: 'OpenDyslexic', sans-serif;
 }
   
-  .mode2, .mode3 {
-    padding-top: .5rem;
-  }
+.font2 {
+  padding-top: .5rem;
+  font-family: 'OpenSans', sans-serif;
+}
+
+.font3 {
+  padding-top: .5rem;
+  font-family: 'Verdana', sans-serif;
+}
+
+.font1, .font2, .font3::before {
+  content: '';
+  background: #fff;
+  transform-origin: left top;
+  transform: scale(0, 1);
+}
+
+.font1, .font2, .font3, :hover {
+  color: #3D3C87;
+  transform-origin: right top;
+  transform: scale(1, 1);
+}
+
+/* .font1, .font2, .font3 {
+  &:before, &:after
+  content: ""
+  left: 0
+  width: 100%
+  height: 2px
+  background-color: #fff
+  opacity: 0
+  transition: opacity .3s, transform .3s
+&:before
+  top: 0
+  transform: translateY(-10px)
+&:after
+  bottom: 0
+  transform: translateY(10px)
+&:hover, &:focus
+  color: #5C7497
+  &:before, &:after
+    opacity: 1
+    transform: translateY(0px)
+} */
+
+
+
+
+
 
   
-.features_micro {
+.dyslexia_micro {
   font-family: 'NotoSans', sans-serif;
   font-size: 1.5rem;
   z-index: 100;
@@ -118,7 +181,7 @@ li {
   color: #000000;
 }
   
-.features_micro:after{
+.dyslexia_micro:after{
   content: '';
   position: absolute;
   width: 100%;
@@ -131,7 +194,7 @@ li {
   transition: transform 0.35s ease-out;
 }
   
-.features_micro:hover:after {
+.dyslexia_micro:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -314,37 +377,37 @@ li {
 
 @media screen and (min-width: 1200px) {
     .header {
-        width: 100%;
-        margin-top: 5rem;
+      width: 100%;
+      margin-top: 5rem;
     }
 
     .url_link_name {
-        margin: 2rem 0;
-        font-size: 1.8rem;
+      margin: 2rem 0;
+      font-size: 1.8rem;
     }
 
     body {
-        margin: 3rem 1rem;
-        line-height: 3rem;
+      margin: 3rem 1rem;
+      line-height: 3rem;
     }
 
     .beta_description_mainTab, .beta_description_subCat {
-        margin: 0 2rem;
-        display: flex;
+      margin: 0 2rem;
+      display: flex;
     }
 
     h1 {
-        font-size: 2.5rem;
-        margin: 2rem 0;
+      font-size: 2rem;
+      margin: 0;
     }
 
     h2 {
-        font-size: 1.8rem;
-        margin-bottom: 0;
+      font-size: 1.8rem;
+      margin-bottom: 0;
     }
       
     h3 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
       
     h4 {
@@ -356,13 +419,13 @@ li {
     }
 
     .beta_description_mainTab__triggers, .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__triggers, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
-        margin: 2rem 1rem;
+      margin: 2rem 1rem;
     }
     
-    .beta_description__picture {
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 2rem 1rem;
+    .beta_description {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 12rem 2rem 2rem;
     }
 }
