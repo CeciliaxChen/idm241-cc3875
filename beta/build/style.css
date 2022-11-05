@@ -37,7 +37,7 @@
 
 .url_link_name {
   margin: 1.5rem 0;
-  color: #DE7456;
+  color: #3D3C87;
 }
 
 .header {
@@ -104,9 +104,53 @@ li {
   width: 12rem;
   background-color: white;
   margin: auto;
-  height: 4rem;
+  height: 3.5rem;
 }
-  
+
+
+
+
+
+
+
+/* CHANGING BG OF BUTTON AND CHANGING COLOUR OF TEXT */
+
+.button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: #D7F6EF;
+  transition: transform 0.3s;
+}
+.button:hover {
+  color: #3D3C87;
+}
+
+.button01::before {
+  transform-origin: left top;
+  transform: scale(0, 1);
+}
+.button01:hover::before {
+  transform-origin: right top;
+  transform: scale(1, 1);
+}
+
+
+
+
+
+
   
 .font1, .font2, .font3 {
   height: 3.5rem;
@@ -116,33 +160,22 @@ li {
 }
   
 .font1 {
-  padding-top: .5rem;
+  padding-top: 1rem;
   font-family: 'OpenDyslexic', sans-serif;
 }
   
 .font2 {
-  padding-top: .5rem;
+  padding-top: 1rem;
   font-family: 'OpenSans', sans-serif;
 }
 
 .font3 {
-  padding-top: .5rem;
+  padding-top: 1rem;
   font-family: 'Verdana', sans-serif;
 }
 
-.font1, .font2, .font3::before {
-  content: '';
-  background: #fff;
-  transform-origin: left top;
-  transform: scale(0, 1);
-}
 
-.font1, .font2, .font3, :hover {
-  color: #3D3C87;
-  transform-origin: right top;
-  transform: scale(1, 1);
-}
-
+/* border line */
 /* .font1, .font2, .font3 {
   &:before, &:after
   content: ""
@@ -167,9 +200,6 @@ li {
 
 
 
-
-
-
   
 .dyslexia_micro {
   font-family: 'NotoSans', sans-serif;
@@ -186,10 +216,10 @@ li {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #DF5C38;
+  background-color: #D7F6EF;
   transform-origin: bottom left;
   transition: transform 0.35s ease-out;
 }
@@ -368,6 +398,10 @@ li {
       
     li {
       font-size: .9rem;
+    }
+
+    .dropdown_mode {
+      margin: 3rem 0;
     }
 
     .beta_description_mainTab__triggers, .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__triggers, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
