@@ -104,7 +104,7 @@ li {
   width: 12rem;
   background-color: white;
   margin: auto;
-  height: 3.2rem;
+  height: 3.5rem;
 }
 
 
@@ -458,6 +458,13 @@ li {
       
     li {
       font-size: 1rem;
+    }
+
+    .menu {
+      width: 12rem;
+      background-color: white;
+      margin: auto;
+      height: 4rem;
     }
 
     .beta_description_mainTab__triggers, .beta_description_mainTab__rules, .beta_description_mainTab__feedback, .beta_description_mainTab__loopsAndModes, .beta_description_subCat__triggers, .beta_description_subCat__rules, .beta_description_subCat__feedback, .beta_description_subCat__loopsAndModes {
