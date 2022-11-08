@@ -10,23 +10,41 @@ hoverTriggerElement.onmouseover = function (event) {
 };
 
 // add mouseout event listener to parentElement
-hoverTriggerElemenet.onmouseout = function (event) {
+hoverTriggerElement.onmouseout = function (event) {
   hoverTriggerElement.classList.add("fade-out");
   hoverTriggerElement.classList.remove("fade-in");
 };
 
 
 
+var element1 = document.getElementById("onBold");
+var element2 = document.getElementById("onBold2");
+var element3 = document.getElementById("onBold3");
 
 function changeStyle(){
-  var element = document.getElementById("onBold");
-  element.style.fontWeight = "bold";
+  console.log('change style');
+  // example of adding a CSS style to the text 
+  // element1.classList.add("font1-bold");
+  element1.style.fontWeight = "bold";
+  element2.style.fontWeight = "normal";
+  element3.style.fontWeight = "normal";
 }
-function changeStyle(){
-  var element = document.getElementById("onBold2");
-  element.style.fontWeight = "bold";
+function changeStyle2(){
+  element2.style.fontWeight = "bold";
+  element1.style.fontWeight = "normal";
+  element3.style.fontWeight = "normal";
 }
-function changeStyle(){
-  var element = document.getElementById("onBold3");
-  element.style.fontWeight = "bold";
+function changeStyle3(){
+  element3.style.fontWeight = "bold";
+  element1.style.fontWeight = "normal";
+  element2.style.fontWeight = "normal";
 }
+
+
+
+// const DyslexicButton = document.querySelector("#onBold");
+// const DyslexicFont = document.querySelector(".font1");
+
+// DyslexicButton.addEventListener("click", () => {
+//   DyslexicFont.classList.toggle("be-bold");
+// });

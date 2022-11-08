@@ -24,8 +24,18 @@
   }
 
   @font-face {
+    font-family: 'OpenDyslexicBold';
+    src: url('OpenDyslexic-Bold.woff2');
+  }
+
+  @font-face {
     font-family: 'OpenSans';
     src: url('OpenSans-Reg.woff2');
+  }
+
+  @font-face {
+    font-family: 'OpenSansBold';
+    src: url('OpenSans-Bold.woff2');
   }
 
   @font-face {
@@ -33,6 +43,10 @@
     src: url('verdana.woff2');
   }
 
+  @font-face {
+    font-family: 'VerdanaBold';
+    src: url('verdana-bold.woff2');
+  }
 
 
 .url_link_name {
@@ -147,6 +161,23 @@ li {
 }
 
 
+#onBold, #onBold2, #onBold3 {
+  opacity: 1; 
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3 ease-in-out;
+}
+
+#onBold.fade, #onBold2.fade, #onBold3.fade {
+  opacity: 0;
+}
+
+
+
+
+
 
 
 
@@ -157,48 +188,27 @@ li {
   width: 12rem;
   background-color: white;
   text-align: center;
+  padding-top: 1rem;
 }
   
 .font1 {
-  padding-top: 1rem;
   font-family: 'OpenDyslexic', sans-serif;
+  font-weight: 100;
+  transition: font-weight .5s ease-in-out;
 }
-  
+
+
 .font2 {
-  padding-top: 1rem;
   font-family: 'OpenSans', sans-serif;
+  font-weight: 100;
+  transition: font-weight .5s ease-in-out;
 }
 
 .font3 {
-  padding-top: 1rem;
   font-family: 'Verdana', sans-serif;
+  font-weight: 100;
+  transition: font-weight .5s ease-in-out;
 }
-
-
-/* border line */
-/* .font1, .font2, .font3 {
-  &:before, &:after
-  content: ""
-  left: 0
-  width: 100%
-  height: 2px
-  background-color: #fff
-  opacity: 0
-  transition: opacity .3s, transform .3s
-&:before
-  top: 0
-  transform: translateY(-10px)
-&:after
-  bottom: 0
-  transform: translateY(10px)
-&:hover, &:focus
-  color: #5C7497
-  &:before, &:after
-    opacity: 1
-    transform: translateY(0px)
-} */
-
-
 
   
 .dyslexia_micro {
