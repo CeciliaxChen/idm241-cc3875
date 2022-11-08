@@ -25,17 +25,17 @@ function changeStyle(){
   console.log('change style');
   // example of adding a CSS style to the text 
   // element1.classList.add("font1-bold");
-  element1.style.fontWeight = "bold";
+  element1.style.fontWeight = "bolder";
   element2.style.fontWeight = "normal";
   element3.style.fontWeight = "normal";
 }
 function changeStyle2(){
-  element2.style.fontWeight = "bold";
+  element2.style.fontWeight = "bolder";
   element1.style.fontWeight = "normal";
   element3.style.fontWeight = "normal";
 }
 function changeStyle3(){
-  element3.style.fontWeight = "bold";
+  element3.style.fontWeight = "bolder";
   element1.style.fontWeight = "normal";
   element2.style.fontWeight = "normal";
 }

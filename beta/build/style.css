@@ -194,21 +194,38 @@ li {
 .font1 {
   font-family: 'OpenDyslexic', sans-serif;
   font-weight: 100;
-  transition: font-weight .5s ease-in-out;
+  transition: font-weight 1s ease-in-out;
 }
 
+/* .font1-bold {
+  font-family: 'OpenDyslexicBold', sans-serif;
+} */
+
+/* .be-bold {
+  font-weight: 900;
+} */
 
 .font2 {
   font-family: 'OpenSans', sans-serif;
   font-weight: 100;
-  transition: font-weight .5s ease-in-out;
+  transition: font-weight 1s ease-in-out;
 }
+
+/* .font2-bold {
+  font-family: 'OpenSansBold', sans-serif;
+} */
 
 .font3 {
   font-family: 'Verdana', sans-serif;
   font-weight: 100;
-  transition: font-weight .5s ease-in-out;
+  transition: font-weight 1s ease-in-out;
 }
+
+/* .font3-bold {
+  font-family: 'VerdanaBold', sans-serif;
+} */
+
+
 
   
 .dyslexia_micro {
