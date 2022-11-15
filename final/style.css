@@ -1,3 +1,255 @@
+/* normalising */
+* {
+    box-sizing: border-box;
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.url_link_name {
+    margin: 1.5rem 0;
+    color: #DE7456;
+}
+
+.header {
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+  width: 80%;
+}
+
+body {
+  background-color: #f5f5f5;
+  line-height: 2rem;
+}
+
+main {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Nunito', sans-serif;
+}
+
 h1 {
-    color: blue;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #43597D;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #43597D;
+  }
+
+h4 {
+  font-size: 1.4rem;
+  color: #668396;
+}
+
+p {
+  font-size: 1.3rem;
+  font-family: 'NotoSans', sans-serif;
+}
+
+
+ul {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  list-style: circle;
+  margin-left: 2.8rem;
+  line-height: 1.5rem;
+  margin-top: .2rem;
+  margin-bottom: .3rem;
+}
+
+li {
+  font-family: 'NotoSans', sans-serif;
+  list-style-type: circle;
+}
+
+.pics {
+  margin: auto;
+  width: 30%;
+  display: block;
+}
+
+
+
+
+
+@media screen and (min-width: 320px) {
+    .header {
+        width: 90%;
+        margin-top: 2.5rem;
+    }
+
+    .url_link_name {
+        margin: 1rem 0;
+    }
+
+    body {
+        margin: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin: 3rem 0 1rem;
+    }
+      
+    h3 {
+        font-size: 1.1rem;
+        text-align: left;
+        margin-left: 1rem;
+    }
+      
+    h4 {
+      font-size: .8rem;
+      text-align: left;
+      margin-left: 1rem;
+
+    }
+
+    ul {
+        font-size: .8rem;
+    }
+      
+    li {
+      text-align: left;
+      font-size: .8rem;
+    }
+
+    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
+      margin: 1.5rem .3rem 1.5rem 0;
+    }
+
+    .pics {
+      width: 70%;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    .header {
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    body {
+        margin: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 3rem 0 1rem;
+    }
+      
+    h3 {
+        font-size: 1.3rem;
+    }
+      
+    h4 {
+      font-size: 1rem;
+    }
+      
+    li {
+      font-size: .9rem;
+    }
+
+    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
+        margin: 1.5rem 0;
+    }
+
+    .pics {
+        display: block;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width: 50%;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .header {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .url_link_name {
+        margin: 2rem 0;
+        font-size: 1.8rem;
+    }
+
+    body {
+        margin: 3rem 1rem;
+        line-height: 3rem;
+    }
+
+    .final_description_mainTab, .final_description_subCat {
+        margin: 0 2rem;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+      
+    h3 {
+        font-size: 1.5rem;
+    }
+      
+    h4 {
+      font-size: 1.2rem;
+    }
+      
+    li {
+      font-size: 1rem;
+    }
+
+    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
+        margin: 2rem 1rem;
+    }
+    
+    .final_description__picture {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem 1rem;
+    }
+    
+    .pics {
+      width: 20%;
+      margin: 2rem;
+    }
 }
