@@ -4,7 +4,18 @@
     box-sizing: 0;
     margin: 0;
     padding: 0;
-  }
+}
+
+/* fonts */
+@font-face {
+  font-family: 'Nunito';
+  src: url('Nunito3.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('notosans2.woff2');
+}
 
 
 .url_link_name {
@@ -127,12 +138,16 @@ li {
       font-size: .8rem;
     }
 
+    .final_description_mainTabTitle, .final_description_subCatTitle {
+      margin-left: .5rem;
+    }
+
     .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
-      margin: 1.5rem .3rem 1.5rem 0;
+      margin: 1.5rem .2rem 0;
     }
 
     .pics {
-      width: 70%;
+      width: 90%;
       margin: auto;
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -177,6 +192,10 @@ li {
       font-size: .9rem;
     }
 
+    .final_description {
+      margin-left: .6rem;
+    }
+
     .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
         margin: 1.5rem 0;
     }
@@ -186,7 +205,7 @@ li {
         margin: auto;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -237,6 +256,10 @@ li {
       font-size: 1rem;
     }
 
+    .final_description_mainTabTitle, .final_description_subCatTitle {
+      margin-left: 2rem;
+    }
+
     .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
         margin: 2rem 1rem;
     }
@@ -245,11 +268,10 @@ li {
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        margin: 2rem 1rem;
+        margin: 3rem 1rem .5rem;
     }
     
     .pics {
-      width: 20%;
-      margin: 2rem;
+      width: 30%;
     }
 }
