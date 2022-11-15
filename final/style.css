@@ -138,11 +138,11 @@ li {
       font-size: .8rem;
     }
 
-    .final_description_mainTabTitle, .final_description_subCatTitle {
+    .final_description_mainTabTitle, .final_description_subCatTitle, .final_description_sampleTextTitle {
       margin-left: .5rem;
     }
 
-    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
+    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
       margin: 1.5rem .2rem 0;
     }
 
@@ -196,7 +196,7 @@ li {
       margin-left: .6rem;
     }
 
-    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
+    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
         margin: 1.5rem 0;
     }
 
@@ -229,7 +229,7 @@ li {
         line-height: 3rem;
     }
 
-    .final_description_mainTab, .final_description_subCat {
+    .final_description_mainTab, .final_description_subCat, .final_description_sampleText {
         margin: 0 2rem;
         display: flex;
     }
@@ -256,11 +256,11 @@ li {
       font-size: 1rem;
     }
 
-    .final_description_mainTabTitle, .final_description_subCatTitle {
+    .final_description_mainTabTitle, .final_description_subCatTitle, .final_description_sampleTextTitle {
       margin-left: 2rem;
     }
 
-    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes {
+    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
         margin: 2rem 1rem;
     }
     
