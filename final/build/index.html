@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final Build </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header_description">IDM 241 - Microinteractions: Final Build</h1>
+        <a class="url_link" href="https://www.allrecipes.com" target="_blank"> 
+            <h2 class="url_link_name"> allrecipes </h2>
+        </a>
+    </div>
+    <main> 
+        <div class="menu"> 
+            <div class="line_under_tab"></div>
+            <div class="dropdown_mode fade-out">
+                <h1 class="dyslexia_micro"> Dyslexia </h1> 
+                <ul class="dropdown_mode__content">
+                    <li class="button button01 font1" id="onBold" onclick="changeStyle()"> OpenDyslexic </li>
+                    <li class="button button01 font2" id="onBold2" onclick="changeStyle2()"> OpenSans </li>
+                    <li class="button button01 font3" id="onBold3" onclick="changeStyle3()"> Verdana </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="final_description">
+        <h2 class="final_description_mainTabTitle"> Dyslexia Main Tab </h2>
+        <section class="final_description_mainTab">
+            <div class="final_description_mainTab__triggers"> 
+                <h3 class="triggers_title"> Triggers </h3>
+                <ul class="triggers_title__list"> 
+                    <li class="triggers_title__list_item"> hover on and off the "Dyslexia" main tab on the menu </li>
+                    <li class="triggers_title__list_item"> hover on and off the sub categories tabs in the menu </li>
+                </ul>
+            </div>
+            <div class="final_description_mainTab__rules">
+                <h3 class="rules_title"> Rules </h3>
+                <ul class="rules_title__list">
+                    <li class="rules_title__list_item"> the thin, turqoise underline on the tab would start from the left and travel horizontally to the end of the word on hover and the underline will retract off hover</li>
+                    <li class="rules_title__list_item"> the thin, turqoise underline on the tab would retract horizontally off hover</li>
+                    <li class="rules_title__list_item"> a turquoise box will travel from the left to fill the background of the selected font sub category to the right until it is completely filled on hover </li>
+                    <li class="rules_title__list_item"> a turquoise box will travel unfill from the selected font sub category off hover </li>
+                    <li class="rules_title__list_item"> the sub categories will consequentially ease in 0.35s on hover and ease out 0.35s off hover, one sub category after another from top to bottom</li>
+                    <li class="rules_title__list_item"> the arrow curser turns into the pointer curser on hover and turns back to the arrow off hover  </li>
+                    <li class="rules_title__list_item"> as the box gets filled from left to right, the letters change from black to purple on hover </li>
+                    <li class="rules_title__list_item"> as the box gets unfilled from left to right, the letters change from purple back to black </li>
+                </ul>
+            </div>
+            <div class="final_description_mainTab__feedback">
+                <h3 class="feedback_title"> Feedback </h3>
+                <ul class="rules_title__list">
+                    <li class="rules_title__list_item"> the thin, turqoise underline on the tab would start from the left and travel horizontally to the end of the word on hover and the underline will retract off hover</li>
+                    <li class="rules_title__list_item"> the thin, turqoise underline on the tab would retract horizontally off hover</li>
+                    <li class="rules_title__list_item"> a turquoise box will travel from the left to fill the background of the selected font sub category to the right until it is completely filled on hover </li>
+                    <li class="rules_title__list_item"> a turquoise box will travel unfill from the selected font sub category off hover </li>
+                    <li class="rules_title__list_item"> the sub categories will consequentially ease in 0.35s on hover and ease out 0.35s off hover, one sub category after another from top to bottom</li>
+                    <li class="rules_title__list_item"> the arrow curser turns into the pointer curser on hover and turns back to the arrow off hover  </li>
+                    <li class="rules_title__list_item"> as the box gets filled from left to right, the letters change from black to purple on hover </li>
+                    <li class="rules_title__list_item"> as the box gets unfilled from left to right, the letters change from purple back to black </li>
+                </ul>
+            </div>
+            <div class="final_description_mainTab__loopsAndModes"> 
+                <h3 class="loopsAndModes_title"> Loops and Modes </h3>
+                <ul class="loopsAndModes_title__list">
+                    <li class="loopsAndModes_title__list_item"> sub categories of menu appear on hover and sub categories of menu disappear off hover </li>
+                </ul>
+            </div>
+        </section>
+        <h2 class="final_description_subCatTitle"> Sub Category Fonts </h2>
+        <section class="final_description_subCat">
+            <div class="final_description_subCat__triggers">
+                <h3 class="triggers_title"> Triggers </h3>
+                <ul class="triggers_title__list">
+                    <li class="triggers_title__list_item"> click on and off the sub categories of fonts after hovering on the 'Dyslexia' tab </li>
+                </ul>
+            </div>
+            <div class="final_description_subCat__rules">
+                <h3 class="rules_title"> Rules </h3>
+                <ul class="rules_title__list"> 
+                    <li class="rules_title__list_item"> the word of the font is bolded when clicked on while it fades into the bolded state of the text </li>
+                    <li class="rules_title__list_item"> the word of the font is unbolded when another font is selected while it fades out to the default text </li>
+                    <li class="rules_title__list_item"> the sample text of the different fonts will change based on the font being selected on </li>
+                </ul>
+            </div>
+            <div class="final_description_subCat__feedback">
+                <h3 class="feedback_title"> Feedback </h3>
+                <ul class="feedback_title__list">
+                    <li class="feedback_title__list_item"> the word of the font is bolded when clicked on while it fades into the bolded state of the text </li>
+                    <li class="feedback_title__list_item"> the word of the font is unbolded when another font is selected while it fades out to the default text </li>
+                    <li class="feedback_title__list_item"> the sample text of the different fonts will change based on the font being selected on </li>
+                </ul>
+            </div>
+            <div class="final_description_subCat__loopsAndModes">
+                <h3 class="loopsAndModes_title"> Loops and Modes </h3>
+                <ul class="loopsAndModes_title__list"> 
+                    <li class="loopsAndModes_title__list_item"> the sample text of the different fonts will show-hide based on the font being selected </li>
+                    <li class="loopsAndModes_title__list_item"> the font of the sample text when a different font is selected will fade in and out </li>
+                </ul>
+            </div> 
+        </section>
+        <h2 class="final_description_sampleTextTitle"> SampleText </h2>
+        <section class="final_description_sampleText">
+            <div class="final_description_sampleText__triggers">
+                <h3 class="triggers_title"> Triggers </h3>
+                <ul class="triggers_title__list">
+                    <li class="triggers_title__list_item"> hover on and off the close button </li>
+                    <li class="triggers_title__list_item"> click on close button </li>
+                </ul>
+            </div>
+            <div class="final_description_sampleText__rules">
+                <h3 class="rules_title"> Rules </h3>
+                <ul class="rules_title__list"> 
+                    <li class="rules_title__list_item"> close button will fill in when hovered on it </li>
+                    <li class="rules_title__list_item"> sample text will fade out when close button is clicked on </li>
+                </ul>
+            </div>
+            <div class="final_description_sampleText__feedback">
+                <h3 class="feedback_title"> Feedback </h3>
+                <ul class="feedback_title__list">
+                    <li class="feedback_title__list_item"> close button will fill in when hovered on it </li>
+                    <li class="feedback_title__list_item"> sample text will close when close button is clicked on </li>
+                </ul>
+            </div>
+            <div class="final_description_sampleText__loopsAndModes">
+                <h3 class="loopsAndModes_title"> Loops and Modes </h3>
+                <ul class="loopsAndModes_title__list"> 
+                    <li class="loopsAndModes_title__list_item"> none </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
