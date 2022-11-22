@@ -4,7 +4,8 @@
     box-sizing: 0;
     margin: 0;
     padding: 0;
-}
+  }
+
 
 /* fonts */
 @font-face {
@@ -48,9 +49,20 @@
   }
 
 
+.url_link {
+    margin: 0;
+}
+
 .url_link_name {
-    margin: 1.5rem 0;
-    color: #3D3C87;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #3D3C87;
+  text-align: center;
+}
+
+.alpha_link, .beta_link {
+  margin: .5rem 0;
+  font-size: 1rem;
 }
 
 .header {
@@ -83,9 +95,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6rem;
-    color: #43597D;
-  }
+  font-size: 1.6rem;
+  color: #43597D;
+}
 
 h4 {
   font-size: 1.4rem;
@@ -114,12 +126,17 @@ li {
 }
 
 .menu {
-    width: 12rem;
-    background-color: white;
-    margin: auto;
-    height: 3.5rem;
-  }
+  width: 12rem;
+  background-color: white;
+  margin: auto;
+  height: 3.5rem;
+}
 
+.sampleTextLine {
+    background-color: #f5f5f5;
+    margin: 15rem 3rem 0;
+    text-align: center;
+}
 
 
 
@@ -130,205 +147,203 @@ li {
 /* CHANGING BG OF BUTTON AND CHANGING COLOUR OF TEXT */
 
 .button {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  .button::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    content: "";
-    background: #D7F6EF;
-    transition: transform 0.3s;
-  }
-  .button:hover {
-    color: #3D3C87;
-  }
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: #D7F6EF;
+  transition: transform 0.3s;
+}
+.button:hover {
+  color: #3D3C87;
+}
+
+.button01::before {
+  transform-origin: left top;
+  transform: scale(0, 1);
+}
+.button01:hover::before {
+  transform-origin: right top;
+  transform: scale(1, 1);
+}
+
+
+#onBold, #onBold2, #onBold3 {
+  opacity: 1; 
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3 ease-in-out;
+}
+
+#onBold.fade, #onBold2.fade, #onBold3.fade {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
   
-  .button01::before {
-    transform-origin: left top;
-    transform: scale(0, 1);
-  }
-  .button01:hover::before {
-    transform-origin: right top;
-    transform: scale(1, 1);
-  }
+.font1, .font2, .font3 {
+  height: 3.5rem;
+  width: 12rem;
+  background-color: white;
+  text-align: center;
+  padding-top: 1rem;
+}
+  
+.font1 {
+  font-family: 'OpenDyslexic', sans-serif;
+  font-weight: 100;
+  transition: font-weight 1s ease-in-out;
+}
+
+/* .font1-bold {
+  font-family: 'OpenDyslexicBold', sans-serif;
+} */
+
+/* .be-bold {
+  font-weight: 900;
+} */
+
+.font2 {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 100;
+  transition: font-weight 1s ease-in-out;
+}
+
+/* .font2-bold {
+  font-family: 'OpenSansBold', sans-serif;
+} */
+
+.font3 {
+  font-family: 'Verdana', sans-serif;
+  font-weight: 100;
+  transition: font-weight 1s ease-in-out;
+}
+
+/* .font3-bold {
+  font-family: 'VerdanaBold', sans-serif;
+} */
+
+
+
+  
+.dyslexia_micro {
+  font-family: 'NotoSans', sans-serif;
+  font-size: 1.5rem;
+  z-index: 100;
+
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+  
+.dyslexia_micro:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #D7F6EF;
+  transform-origin: bottom left;
+  transition: transform 0.35s ease-out;
+}
+  
+.dyslexia_micro:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
   
   
-  #onBold, #onBold2, #onBold3 {
-    opacity: 1; 
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3 ease-in-out;
-  }
   
-  #onBold.fade, #onBold2.fade, #onBold3.fade {
+  
+.dropdown_mode {
+  position: relative;
+  cursor: pointer;
+  padding: .6rem 0;
+}
+
+.dropdown_mode {
+  position: relative;
+}
+
+.dropdown_mode__content {
+  margin: 0;
+}
+
+.dropdown_mode__content li {
+  list-style: none;
+}
+  
+  
+  
+  
+/* Hover ON */
+
+.fade-in ul li:nth-child(1) {
+  animation: .7s forwards fade-in;
+}
+.fade-in ul li:nth-child(2) {
+  animation: 1.5s forwards fade-in;
+}
+
+.fade-in ul li:nth-child(3) {
+  animation: 1.7s forwards fade-in;
+}
+  
+/* Hover OFF */
+  
+.fade-out ul li:nth-child(1) {
+  animation: .5s forwards fade-out;
+}
+.fade-out ul li:nth-child(2) {
+  animation: .8s forwards fade-out;
+}
+
+.fade-out ul li:nth-child(3) {
+  animation: 1s forwards fade-out;
+}
+  
+  /* Animation */
+  
+@-webkit-keyframes fade-in {
+  0% {
     opacity: 0;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-  .font1, .font2, .font3 {
-    height: 3.5rem;
-    width: 12rem;
-    background-color: white;
-    text-align: center;
-    padding-top: 1rem;
-  }
-    
-  .font1 {
-    font-family: 'OpenDyslexic', sans-serif;
-    font-weight: 100;
-    transition: font-weight 1s ease-in-out;
-  }
-  
-  /* .font1-bold {
-    font-family: 'OpenDyslexicBold', sans-serif;
-  } */
-  
-  /* .be-bold {
-    font-weight: 900;
-  } */
-  
-  .font2 {
-    font-family: 'OpenSans', sans-serif;
-    font-weight: 100;
-    transition: font-weight 1s ease-in-out;
-  }
-  
-  /* .font2-bold {
-    font-family: 'OpenSansBold', sans-serif;
-  } */
-  
-  .font3 {
-    font-family: 'Verdana', sans-serif;
-    font-weight: 100;
-    transition: font-weight 1s ease-in-out;
-  }
-  
-  /* .font3-bold {
-    font-family: 'VerdanaBold', sans-serif;
-  } */
-  
-  
-  
-    
-  .dyslexia_micro {
-    font-family: 'NotoSans', sans-serif;
-    font-size: 1.5rem;
-    z-index: 100;
-  
-    display: inline-block;
-    position: relative;
-    color: #000000;
-  }
-    
-  .dyslexia_micro:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #D7F6EF;
-    transform-origin: bottom left;
-    transition: transform 0.35s ease-out;
-  }
-    
-  .dyslexia_micro:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-    
-    
-    
-    
-  .dropdown_mode {
-    position: relative;
-    cursor: pointer;
-    padding: .6rem 0;
-  }
-  
-  .dropdown_mode {
-    position: relative;
-  }
-  
-  .dropdown_mode__content {
-    margin: 0;
-  }
-  
-  .dropdown_mode__content li {
-    list-style: none;
-  }
-    
-    
-    
-    
-  /* Hover ON */
-  
-  .fade-in ul li:nth-child(1) {
-    animation: .7s forwards fade-in;
-  }
-  .fade-in ul li:nth-child(2) {
-    animation: 1.5s forwards fade-in;
-  }
-  
-  .fade-in ul li:nth-child(3) {
-    animation: 1.7s forwards fade-in;
-  }
-    
-  /* Hover OFF */
-    
-  .fade-out ul li:nth-child(1) {
-    animation: .5s forwards fade-out;
-  }
-  .fade-out ul li:nth-child(2) {
-    animation: .8s forwards fade-out;
-  }
-  
-  .fade-out ul li:nth-child(3) {
-    animation: 1s forwards fade-out;
-  }
-    
-    /* Animation */
-    
-  @-webkit-keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-    
-  @-webkit-keyframes fade-out {
-    0% {
-      opacity: 1;
-    }
-  
-    100% {
-      opacity: 0;
-    }
-  }
-  
 
+  100% {
+    opacity: 1;
+  }
+}
+  
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 
 
@@ -382,10 +397,14 @@ li {
       font-size: .8rem;
     }
 
+    .final_description {
+      margin: 11rem 1rem 2rem;
+    }
+
     .final_description_mainTabTitle, .final_description_subCatTitle, .final_description_sampleTextTitle {
       margin-left: .5rem;
     }
-
+  
     .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
       margin: 1.5rem .2rem 0;
     }
@@ -429,12 +448,16 @@ li {
       font-size: .9rem;
     }
 
-    .final_description {
-      margin-left: .6rem;
+    .dropdown_mode {
+      margin: 3rem 0;
     }
 
     .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
         margin: 1.5rem 0;
+    }
+
+    .final_description {
+      margin: 12rem 1rem;
     }
 }
 
@@ -444,18 +467,18 @@ li {
 
 @media screen and (min-width: 1200px) {
     .header {
-        width: 100%;
-        margin-top: 5rem;
+      width: 100%;
+      margin-top: 5rem;
     }
 
     .url_link_name {
-        margin: 2rem 0;
-        font-size: 1.8rem;
+      margin: 2rem 0;
+      font-size: 1.8rem;
     }
 
     body {
-        margin: 3rem 1rem;
-        line-height: 3rem;
+      margin: 3rem 1rem;
+      line-height: 3rem;
     }
 
     .final_description_mainTab, .final_description_subCat, .final_description_sampleText {
@@ -464,17 +487,17 @@ li {
     }
 
     h1 {
-        font-size: 2.5rem;
-        margin: 2rem 0;
+      font-size: 2rem;
+      margin: 0;
     }
 
     h2 {
-        font-size: 1.8rem;
-        margin-bottom: 0;
+      font-size: 1.8rem;
+      margin-bottom: 0;
     }
       
     h3 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
       
     h4 {
@@ -485,11 +508,25 @@ li {
       font-size: 1rem;
     }
 
-    .final_description_mainTabTitle, .final_description_subCatTitle, .final_description_sampleTextTitle {
-      margin-left: 2rem;
+    .menu {
+      width: 12rem;
+      background-color: white;
+      margin: auto;
+      height: 4rem;
     }
 
+    .final_description_mainTabTitle, .final_description_subCatTitle, .final_description_sampleTextTitle {
+        margin-left: 2rem;
+    }
+  
     .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
         margin: 2rem 1rem;
+    }
+    
+    .final_description {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 4rem 2rem 2rem;
     }
 }
