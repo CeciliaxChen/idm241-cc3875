@@ -4,7 +4,16 @@
     box-sizing: 0;
     margin: 0;
     padding: 0;
-  }
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;900&family=Nunito:wght@300;400;500;800&family=Open+Sans:wght@300;400;500;800&family=Quicksand:wght@300;400;700&display=swap'); */
+/* QUICKSAND IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* OPEN SANS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap'); 
+/* NOTO SANS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Exo+2:400,900,800,700,600,500,300,200,100'); */
 
 
 /* fonts */
@@ -13,49 +22,9 @@
     src: url('Nunito3.woff2');
   }
 
-  @font-face {
-    font-family: 'NotoSans';
-    src: url('notosans2.woff2');
-  }
-
-  @font-face {
-    font-family: 'OpenDyslexic';
-    src: url('OpenDyslexic-Reg.woff2');
-  }
-
-  @font-face {
-    font-family: 'OpenDyslexicBold';
-    src: url('OpenDyslexic-Bold.woff2');
-  }
-
-  @font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-Reg.woff2');
-  }
-
-  @font-face {
-    font-family: 'OpenSansBold';
-    src: url('OpenSans-Bold.woff2');
-  }
-
-  @font-face {
-    font-family: 'Verdana';
-    src: url('verdana.woff2');
-  }
-
-  @font-face {
-    font-family: 'VerdanaBold';
-    src: url('verdana-bold.woff2');
-  }
-
-
-.url_link {
-    margin: 0;
-}
-
 .url_link_name {
   margin: 1rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #3D3C87;
   text-align: center;
 }
@@ -111,7 +80,7 @@ ul {
 }
 
 li {
-  font-family: 'NotoSans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   list-style-type: circle;
 }
 
@@ -122,12 +91,29 @@ li {
   height: 3.5rem;
 }
 
-.sampleTextLine {
-    background-color: #f5f5f5;
-    margin: 16rem 3rem 0;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+/* .boldFont {
+  background-color: white;
+  margin: 15rem 3rem 0;
+  text-align: center;
+  font-family: "Exo 2", san-serif;
+  font-size: 1.5rem;
+
+  font-weight: 300;
+  transition: font-weight 0.5s ease-in-out;
+} */
+
+
+.boldFont {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2rem;
+  color: #2c3e50;
+
+  font-weight: 100;
+  transition: font-weight 1.0s ease-in-out;
+}
+
+.be-bold {
+  font-weight: 900;
 }
 
 
@@ -192,7 +178,7 @@ li {
 
 
   
-.font1, .font2, .font3 {
+.boldFont1, .boldFont2, .boldFont3 {
   height: 3.5rem;
   width: 12rem;
   background-color: white;
@@ -200,45 +186,33 @@ li {
   padding-top: 1rem;
 }
   
-.font1 {
-  font-family: 'OpenDyslexic', sans-serif;
-  font-weight: 100;
+.boldFont1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
   transition: font-weight 1s ease-in-out;
 }
 
-/* .font1-bold {
-  font-family: 'OpenDyslexicBold', sans-serif;
-} */
+.font1-be-bold {
+  font-weight: 700;
+}
 
-/* .be-bold {
-  font-weight: 900;
-} */
-
-.font2 {
-  font-family: 'OpenSans', sans-serif;
-  font-weight: 100;
+#font2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   transition: font-weight 1s ease-in-out;
 }
 
-/* .font2-bold {
-  font-family: 'OpenSansBold', sans-serif;
-} */
 
-.font3 {
-  font-family: 'Verdana', sans-serif;
-  font-weight: 100;
+#font3 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
   transition: font-weight 1s ease-in-out;
 }
-
-/* .font3-bold {
-  font-family: 'VerdanaBold', sans-serif;
-} */
-
 
 
   
 .dyslexia_micro {
-  font-family: 'NotoSans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 1.5rem;
   z-index: 100;
 
