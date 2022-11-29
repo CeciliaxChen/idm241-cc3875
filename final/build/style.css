@@ -1,13 +1,9 @@
-/* normalising */
-* {
-    box-sizing: border-box;
-    box-sizing: 0;
-    margin: 0;
-    padding: 0;
-}
-
 /* QUICKSAND IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
 /* OPEN SANS IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap'); 
 /* ROBOTO IMPORT */
@@ -25,14 +21,6 @@
 @font-face {
   font-family: 'Noto Sans';
   src: url('notosans2.woff2');
-}
-
-
-.url_link_name {
-  margin: 1rem 0;
-  font-size: 1.5rem;
-  color: #3D3C87;
-  text-align: center;
 }
 
 .header {
@@ -86,7 +74,7 @@ ul {
 }
 
 .list {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   list-style-type: circle;
 }
 
@@ -98,19 +86,27 @@ ul {
 }
 
 
-.boldFont {
-  font-family: "Noto Sans", sans-serif;
+.changeTextFont {
+  font-family: 'Noto Sans', sans-serif;
   font-size: 1.5rem;
   background-color: white; 
   color: #2c3e50;
-
   font-weight: 100;
-  transition: font-weight 1.0s ease-in-out;
   margin: 15rem 4rem 1rem 4rem;
 }
 
-.be-bold {
-  font-weight: 900;
+.quicksand-font {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 800;
+}
+
+.opensans-font {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.roboto-font {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
 }
 
 
@@ -189,33 +185,39 @@ ul {
 .boldFont1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
-  transition: font-weight 0.8s ease-in-out;
+  font-size: large;
+  transition: font-size 0.2s ease-in-out;
 }
 
 .font1-be-bold {
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-size: x-large;
 }
 
 
 #font2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  transition: font-weight 0.8s ease-in-out;
+  font-size: large;
+  transition: font-size 0.8s ease-in-out;
 }
 
 .font2-be-bold {
-  font-weight: 800;
+  /* font-weight: 800; */
+  font-size: x-large;
 }
 
 
 #font3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  transition: font-weight 0.8s ease-in-out;
+  font-weight: 300;
+  font-size: large;
+  transition: font-size 0.8s ease-in-out;
 }
 
 .font3-be-bold {
-  font-weight: 900;
+  /* font-weight: 900; */
+  font-size: x-large;
 }
 
 
@@ -266,17 +268,14 @@ ul {
   
   
 .dropdown_mode {
-  position: relative;
   cursor: pointer;
   padding: .6rem 0;
 }
 
-.dropdown_mode {
-  position: relative;
-}
-
 .dropdown_mode__content {
   margin: 0;
+  position: relative;
+  left: -2.5rem;
 }
 
 .dropdown_mode__content li {
@@ -335,6 +334,37 @@ ul {
 }
 
 
+.reset {
+  border: none;
+  background-color: #3D3C87;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: .5rem;
+}
+
+
+.reset:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.reset:active {
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -389,12 +419,8 @@ ul {
     .final_description {
       margin: 11rem 1rem 2rem;
     }
-
-    .final_description_mainTabTitle, .final_description_subCatTitle, .final_description_sampleTextTitle {
-      margin-left: .5rem;
-    }
   
-    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
+    .final_description_triggers, .final_description_rules, .final_description_feedback, .final_description_loopsAndModes {
       margin: 1.5rem .2rem 0;
     }
 }
@@ -441,7 +467,7 @@ ul {
       margin: 3rem 0;
     }
 
-    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
+    .final_description_triggers, .final_description_rules, .final_description_feedback, .final_description_loopsAndModes {
         margin: 1.5rem 0;
     }
 
@@ -468,11 +494,6 @@ ul {
     body {
       margin: 3rem 1rem;
       line-height: 3rem;
-    }
-
-    .final_description_mainTab, .final_description_subCat, .final_description_sampleText {
-        margin: 0 2rem;
-        display: flex;
     }
 
     h1 {
@@ -503,12 +524,8 @@ ul {
       margin: auto;
       height: 4rem;
     }
-
-    .final_description_mainTabTitle, .final_description_subCatTitle, .final_description_sampleTextTitle {
-        margin-left: 2rem;
-    }
   
-    .final_description_mainTab__triggers, .final_description_mainTab__rules, .final_description_mainTab__feedback, .final_description_mainTab__loopsAndModes, .final_description_subCat__triggers, .final_description_subCat__rules, .final_description_subCat__feedback, .final_description_subCat__loopsAndModes, .final_description_sampleText__triggers, .final_description_sampleText__rules, .final_description_sampleText__feedback, .final_description_sampleText__loopsAndModes {
+    .final_description_triggers, .final_description_rules, .final_description_feedback, .final_description_loopsAndModes {
         margin: 2rem 1rem;
     }
     

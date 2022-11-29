@@ -43,21 +43,19 @@ hoverTriggerElement.onmouseout = function (event) {
 // }
 
 
-
-// const sampleTextObj = document.querySelector("#sampleText");
-// const boldFontObj = document.querySelector(".boldFont");
-
-// sampleTextObj.addEventListener("click", () => {
-//   boldFontObj.classList.toggle("be-bold");
-// });
-
+const sampleTextObj = document.querySelector(".sampleText");
 
 const menuItem1Obj = document.querySelector("#menu_item1");
 const boldFont1Obj = document.querySelector(".boldFont1");
 
 menuItem1Obj.addEventListener("click", () => {
-  // console.log('THIS WORKS');
-  boldFont1Obj.classList.toggle("font1-be-bold");
+  // console.log('THIS WORKS for Quicksand');
+  boldFont1Obj.classList.add("font1-be-bold");
+  boldFont2Obj.classList.remove("font2-be-bold");
+  boldFont3Obj.classList.remove("font3-be-bold");
+  sampleTextObj.classList.remove("opensans-font");
+  sampleTextObj.classList.remove("roboto-font");
+  sampleTextObj.classList.add("quicksand-font");
 });
 
 
@@ -65,8 +63,13 @@ const menuItem2Obj = document.querySelector("#menu_item2");
 const boldFont2Obj = document.querySelector(".boldFont2");
 
 menuItem2Obj.addEventListener("click", () => {
-  console.log('THIS WORKS');
-  boldFont2Obj.classList.toggle("font2-be-bold");
+  // console.log('THIS WORKS for Open');
+  boldFont2Obj.classList.add("font2-be-bold");
+  boldFont1Obj.classList.remove("font1-be-bold");
+  boldFont3Obj.classList.remove("font3-be-bold");
+  sampleTextObj.classList.remove("quicksand-font");
+  sampleTextObj.classList.remove("roboto-font");
+  sampleTextObj.classList.add("opensans-font");
 });
 
 
@@ -74,9 +77,25 @@ const menuItem3Obj = document.querySelector("#menu_item3");
 const boldFont3Obj = document.querySelector(".boldFont3");
 
 menuItem3Obj.addEventListener("click", () => {
-  console.log('THIS WORKS');
-  boldFont3Obj.classList.toggle("font3-be-bold");
+  // console.log('THIS WORKS for Roboto');
+  boldFont3Obj.classList.add("font3-be-bold");
+  boldFont1Obj.classList.remove("font1-be-bold");
+  boldFont2Obj.classList.remove("font2-be-bold");
+  sampleTextObj.classList.remove("opensans-font");
+  sampleTextObj.classList.remove("quicksand-font");
+  sampleTextObj.classList.add("roboto-font");
 });
+
+
+const resetTextObj = document.querySelector(".reset");
+
+resetTextObj.addEventListener("click", () => {
+  sampleTextObj.classList.remove("quicksand-font");
+  sampleTextObj.classList.remove("opensans-font");
+  sampleTextObj.classList.remove("roboto-font");
+})
+
+
 
 
 
