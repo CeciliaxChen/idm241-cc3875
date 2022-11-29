@@ -6,21 +6,27 @@
     padding: 0;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;900&family=Nunito:wght@300;400;500;800&family=Open+Sans:wght@300;400;500;800&family=Quicksand:wght@300;400;700&display=swap'); */
 /* QUICKSAND IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 /* OPEN SANS IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap'); 
+/* ROBOTO IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* NOTO SANS IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700;800;900&display=swap');
-/* @import url('https://fonts.googleapis.com/css?family=Exo+2:400,900,800,700,600,500,300,200,100'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700;800;900&display=swap'); */
 
 
 /* fonts */
 @font-face {
-    font-family: 'Nunito';
-    src: url('Nunito3.woff2');
-  }
+  font-family: 'Nunito';
+  src: url('Nunito3.woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('notosans2.woff2');
+}
+
 
 .url_link_name {
   margin: 1rem 0;
@@ -79,8 +85,8 @@ ul {
   margin-bottom: .3rem;
 }
 
-li {
-  font-family: 'Noto Sans', sans-serif;
+.list {
+  font-family: "Noto Sans", sans-serif;
   list-style-type: circle;
 }
 
@@ -91,30 +97,24 @@ li {
   height: 3.5rem;
 }
 
-/* .boldFont {
-  background-color: white;
-  margin: 15rem 3rem 0;
-  text-align: center;
-  font-family: "Exo 2", san-serif;
-  font-size: 1.5rem;
-
-  font-weight: 300;
-  transition: font-weight 0.5s ease-in-out;
-} */
-
 
 .boldFont {
   font-family: "Noto Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  background-color: white; 
   color: #2c3e50;
 
   font-weight: 100;
   transition: font-weight 1.0s ease-in-out;
+  margin: 15rem 4rem 1rem 4rem;
 }
 
 .be-bold {
   font-weight: 900;
 }
+
+
+
 
 
 
@@ -189,28 +189,51 @@ li {
 .boldFont1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
-  transition: font-weight 1s ease-in-out;
+  transition: font-weight 0.8s ease-in-out;
 }
 
 .font1-be-bold {
   font-weight: 700;
 }
 
+
 #font2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  transition: font-weight 1s ease-in-out;
+  transition: font-weight 0.8s ease-in-out;
+}
+
+.font2-be-bold {
+  font-weight: 800;
 }
 
 
 #font3 {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 300;
-  transition: font-weight 1s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  transition: font-weight 0.8s ease-in-out;
+}
+
+.font3-be-bold {
+  font-weight: 900;
 }
 
 
+
+
+/* .fontChange1 {
+  font-family: 'Quicksand', sans-serif;
+} */
+
+
+
+
   
+
+
+
+
+
 .dyslexia_micro {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.5rem;
