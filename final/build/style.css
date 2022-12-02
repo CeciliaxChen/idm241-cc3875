@@ -175,11 +175,11 @@ ul {
 
   
 .boldFont1, .boldFont2, .boldFont3 {
-  height: 3.5rem;
+  height: 3rem;
   width: 12rem;
   background-color: white;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
   
 .boldFont1 {
@@ -194,6 +194,10 @@ ul {
   font-size: x-large;
 }
 
+.boldFont2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem; 
+}
 
 #font2 {
   font-family: 'Open Sans', sans-serif;
@@ -207,10 +211,15 @@ ul {
   font-size: x-large;
 }
 
+.boldFont3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem; 
+}
+
 
 #font3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  /* font-weight: 300; */
   font-size: large;
   transition: font-size 0.8s ease-in-out;
 }
