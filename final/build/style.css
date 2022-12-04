@@ -92,12 +92,11 @@ ul {
   background-color: white; 
   color: #2c3e50;
   font-weight: 100;
-  margin: 15rem 4rem 1rem 4rem;
+  margin: 16rem 4rem 1rem;
 }
 
 .quicksand-font {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 800;
 }
 
 .opensans-font {
@@ -106,9 +105,13 @@ ul {
 
 .roboto-font {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
 }
 
+.textWarning {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
+}
 
 
 
@@ -190,51 +193,40 @@ ul {
 }
 
 .font1-be-bold {
-  /* font-weight: 700; */
   font-size: x-large;
 }
 
 .boldFont2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem; 
+  font-size: 1.1rem; 
 }
 
 #font2 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
   font-size: large;
   transition: font-size 0.8s ease-in-out;
 }
 
 .font2-be-bold {
-  /* font-weight: 800; */
   font-size: x-large;
 }
 
 .boldFont3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem; 
+  font-size: 1.18rem; 
 }
 
 
 #font3 {
   font-family: 'Roboto', sans-serif;
-  /* font-weight: 300; */
   font-size: large;
   transition: font-size 0.8s ease-in-out;
 }
 
 .font3-be-bold {
-  /* font-weight: 900; */
   font-size: x-large;
 }
 
-
-
-
-/* .fontChange1 {
-  font-family: 'Quicksand', sans-serif;
-} */
 
 
 
@@ -380,6 +372,14 @@ ul {
 
 
 
+
+
+
+
+
+
+
+
 @media screen and (min-width: 320px) {
     .header {
         width: 90%;
@@ -427,6 +427,10 @@ ul {
 
     .final_description {
       margin: 11rem 1rem 2rem;
+    }
+
+    .final_description_title {
+      margin: 1rem 0;
     }
   
     .final_description_triggers, .final_description_rules, .final_description_feedback, .final_description_loopsAndModes {
@@ -533,15 +537,17 @@ ul {
       margin: auto;
       height: 4rem;
     }
-  
-    .final_description_triggers, .final_description_rules, .final_description_feedback, .final_description_loopsAndModes {
-        margin: 2rem 1rem;
-    }
-    
+
     .final_description {
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 4rem 2rem 2rem;
+      margin: 1rem 2rem;
     }
+
+    /* .final_description_section {
+      display: flex;
+    } */
+  
+    /* .final_description_triggers, .final_description_rules, .final_description_feedback, .final_description_loopsAndModes {
+      margin: 1rem;
+    } */
+    
 }
