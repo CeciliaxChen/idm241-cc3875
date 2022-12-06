@@ -25,10 +25,11 @@
 
 .header {
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 4rem;
   text-align: center;
   width: 80%;
 }
+
 
 body {
   background-color: #f5f5f5;
@@ -44,7 +45,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 h2 {
@@ -67,7 +68,6 @@ ul {
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   list-style: circle;
-  margin-left: 2.8rem;
   line-height: 1.5rem;
   margin-top: .2rem;
   margin-bottom: .3rem;
@@ -88,11 +88,13 @@ ul {
 
 .changeTextFont {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   background-color: white; 
   color: #2c3e50;
   font-weight: 100;
   margin: 16rem 4rem 1rem;
+  padding: 2rem 3rem;
 }
 
 .quicksand-font {
@@ -110,7 +112,7 @@ ul {
 .textWarning {
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
 }
 
 
@@ -382,31 +384,27 @@ ul {
 
 @media screen and (min-width: 320px) {
     .header {
-        width: 90%;
-        margin-top: 2.5rem;
-    }
-
-    .url_link_name {
-        margin: 1rem 0;
+      width: 80%;
+      margin-top: 2.5rem;
     }
 
     body {
-        margin: 1.2rem;
+      margin: 1rem;
     }
 
     h1 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 1.3rem;
-        margin: 3rem 0 1rem;
+      font-size: 1.3rem;
+      margin: 3rem 0 1rem;
     }
       
     h3 {
-        font-size: 1.1rem;
-        text-align: left;
-        margin-left: 1rem;
+      font-size: 1.1rem;
+      text-align: left;
+      margin-left: 1rem;
     }
       
     h4 {
@@ -417,16 +415,87 @@ ul {
     }
 
     ul {
-        font-size: .8rem;
+      font-size: .8rem;
     }
       
     li {
       text-align: left;
       font-size: .8rem;
+      margin-left: 1rem;
+    }
+
+    list {
+      margin: -1rem;
+    }
+
+    .menu {
+      margin-top: 2rem;
+    }
+
+    .dyslexia_micro {
+      margin-top: -0.3rem;
+      font-size: 1.3rem;
+    }
+
+    .dropdown_mode__content {
+      margin-left: -1rem;
+    }
+
+    .boldFont1, .boldFont2, .boldFont3 {
+      height: 2.5rem;
+      width: 12rem;
+      padding-top: 1.2rem;
+    }
+      
+    .boldFont1 {
+      font-size: medium;
+    }
+    
+    .font1-be-bold {
+      font-size: x-large;
+    }
+    
+    .boldFont2 {
+      font-size: 1.1rem; 
+    }
+    
+    #font2 {
+      font-size: medium;
+    }
+    
+    .font2-be-bold {
+      font-size: x-large;
+    }
+    
+    .boldFont3 {
+      font-size: 1.18rem; 
+    }
+    
+    
+    #font3 {
+      font-size: medium;
+    }
+    
+    .font3-be-bold {
+      font-size: x-large;
+    }
+
+
+    .changeTextFont {
+      font-size: .9rem;
+      margin: 13rem 1rem 1rem;
+      padding: 2rem;
+      line-height: 1.3rem;
+    }
+
+    .textWarning {
+      font-size: .8rem;
+      line-height: 1rem;
+      margin: 1rem 1rem 2rem;
     }
 
     .final_description {
-      margin: 11rem 1rem 2rem;
+      margin: 5rem 1rem 2rem;
     }
 
     .final_description_title {
@@ -447,25 +516,25 @@ ul {
 
 @media screen and (min-width: 700px) {
     .header {
-        width: 90%;
-        margin-top: 3rem;
+      width: 90%;
+      margin-top: 3rem;
     }
 
     body {
-        margin: 2.5rem;
+      margin: 2rem;
     }
 
     h1 {
-        font-size: 1.7rem;
+      font-size: 1.7rem;
     }
 
     h2 {
-        font-size: 1.5rem;
-        margin: 3rem 0 1rem;
+      font-size: 1.5rem;
+      margin: 3rem 0 1rem;
     }
       
     h3 {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
       
     h4 {
@@ -475,17 +544,88 @@ ul {
     li {
       font-size: .9rem;
     }
+    
+    .header_description {
+      margin-bottom: 2rem;
+    } 
 
-    .dropdown_mode {
-      margin: 3rem 0;
+    .dyslexia_micro {
+      margin-top: -0.2rem;
+    }
+
+    .dropdown_mode__content {
+      margin-left: -1rem;
+    }
+
+    .boldFont1, .boldFont2, .boldFont3 {
+      height: 3rem;
+      width: 12rem;
+      background-color: white;
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+      
+    .boldFont1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      font-size: large;
+      transition: font-size 0.2s ease-in-out;
+    }
+    
+    .font1-be-bold {
+      font-size: x-large;
+    }
+    
+    .boldFont2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.1rem; 
+    }
+    
+    #font2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: large;
+      transition: font-size 0.8s ease-in-out;
+    }
+    
+    .font2-be-bold {
+      font-size: x-large;
+    }
+    
+    .boldFont3 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.18rem; 
+    }
+    
+    
+    #font3 {
+      font-family: 'Roboto', sans-serif;
+      font-size: large;
+      transition: font-size 0.8s ease-in-out;
+    }
+    
+    .font3-be-bold {
+      font-size: x-large;
     }
 
     .final_description_triggers, .final_description_rules, .final_description_feedback, .final_description_loopsAndModes {
-        margin: 1.5rem 0;
+      margin: 1.5rem 0;
     }
 
     .final_description {
-      margin: 12rem 1rem;
+      margin: 7rem 1rem 4rem;
+    }
+
+    .changeTextFont {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      margin: 16rem 2rem 1rem;
+      padding: 2rem;
+    }
+
+    .textWarning {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      margin: 2rem 0;
     }
 }
 
@@ -496,17 +636,12 @@ ul {
 @media screen and (min-width: 1200px) {
     .header {
       width: 100%;
-      margin-top: 5rem;
-    }
-
-    .url_link_name {
-      margin: 2rem 0;
-      font-size: 1.8rem;
+      margin-top: 4rem;
     }
 
     body {
       margin: 3rem 1rem;
-      line-height: 3rem;
+      line-height: 2.5rem;
     }
 
     h1 {
@@ -536,6 +671,75 @@ ul {
       background-color: white;
       margin: auto;
       height: 4rem;
+    }
+
+    .dropdown_mode__content {
+      margin-left: -1rem;
+      padding-top: -0.5rem;
+    }
+
+    .boldFont1, .boldFont2, .boldFont3 {
+      height: 3rem;
+      width: 12rem;
+      background-color: white;
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+      
+    .boldFont1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      font-size: large;
+      transition: font-size 0.2s ease-in-out;
+    }
+    
+    .font1-be-bold {
+      font-size: x-large;
+    }
+    
+    .boldFont2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.1rem; 
+    }
+    
+    #font2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: large;
+      transition: font-size 0.8s ease-in-out;
+    }
+    
+    .font2-be-bold {
+      font-size: x-large;
+    }
+    
+    .boldFont3 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.18rem; 
+    }
+    
+    
+    #font3 {
+      font-family: 'Roboto', sans-serif;
+      font-size: large;
+      transition: font-size 0.8s ease-in-out;
+    }
+    
+    .font3-be-bold {
+      font-size: x-large;
+    }
+
+
+    .textWarning {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+
+    .changeTextFont {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin: 15rem 4rem 1rem;
+      padding: 2rem 3rem;
     }
 
     .final_description {
