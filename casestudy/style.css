@@ -1,3 +1,131 @@
-h1 {
-    color: blueviolet;
+/* normalising */
+* {
+    box-sizing: border-box;
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+@font-face {
+  font-family: 'Nunito';
+  src: url('Nunito3.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('notosans2.woff2');
+}
+
+.header {
+    margin: auto;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.header_description {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    color: #3D3C87;
+
+}
+
+body {
+    line-height: 2rem;
+}
+
+.hero-image, .allrecipes-features-img, .alpha-img, .beta-img {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.img {
+    width: 70%;
+    margin-top: 3rem;
+    border: 2px solid #3D3C87;
+}
+
+.features-menu {
+    border: 2px solid #3D3C87;
+}
+
+.alpha-image {
+    width: 20%;
+    border: 2px solid #3D3C87;
+}
+
+.beta-image {
+    width: 20%;
+    border: 2px solid #3D3C87;
+}
+
+h2 {
+    font-family: 'Nunito', san-serif;
+    font-size: 2rem;
+    color: #3D3C87;
+    margin: 6rem 0 2rem;
+}
+
+p, li {
+    font-family: 'NotoSans', san-serif;
+    margin: 1rem 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+li {
+    margin: 0 6rem;
+    font-size: 1.2rem;
+}
+
+.case-study {
+    margin: 3rem 8rem;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 2rem 6rem;
+    border: 2px solid #3D3C87;
+    background-color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+.github-link:active {
+    transform: translateY(4px);
+}
+
+.website-link:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+.website-link:active {
+    transform: translateY(4px);
+}
+
+.url_link_name {
+    font-size: 1.5rem;
+    color: #000;
+    font-family: "NotoSans";
+}
+
+footer {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
 }
